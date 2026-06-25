@@ -34,6 +34,7 @@
 		background-color: rgb(38, 38, 38);
 		width: 400px;
 		border: 1px solid rgb(54, 54, 54);
+		border-top: 0px solid rgb(54, 54, 54);
 		position: relative;
 		flex-shrink: 0;
 		flex-grow: 0;
