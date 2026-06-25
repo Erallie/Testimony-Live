@@ -10,8 +10,7 @@
 <div class="obsidian">
 	<div class="sidebar">
 		<div class="heading"></div>
-		<div class="content">
-			<!-- Put calendar and stuff here -->
+		<div class="calendar-container">
 			<Calendar
 				minDate="2024-1-17"
 				maxDate="2026-6-20"
@@ -33,11 +32,14 @@
 <style>
 	div.sidebar {
 		background-color: rgb(38, 38, 38);
-		width: 360px;
+		width: 400px;
 		border: 1px solid rgb(54, 54, 54);
 		position: relative;
 		flex-shrink: 0;
 		flex-grow: 0;
+		& > .calendar-container {
+			padding: 10px;
+		}
 	}
 	div.obsidian {
 		color: rgb(218, 218, 218);

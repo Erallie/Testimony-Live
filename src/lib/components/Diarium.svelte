@@ -77,10 +77,11 @@
 	}
 	div.sidebar {
 		background-color: #21201f;
-		width: 300px;
+		width: 400px;
 		box-sizing: border-box;
 		flex-shrink: 0;
 		flex-grow: 0;
+		padding: 10px;
 	}
 	div.bar {
 		background-color: #504ea0;
