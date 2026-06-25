@@ -7,7 +7,6 @@
 	let { children } = $props();
 </script>
 
-export const prerender = true; export const ssr = false;
 <svelte:head>
 	<link rel="icon" href={favicon} />
 </svelte:head>
