@@ -19,6 +19,9 @@
 			closeModal();
 		}
 	}
+	function handleModalClick() {
+		closeModal();
+	}
 
 	import { allowedDates } from '$lib/stores';
 </script>
@@ -44,7 +47,7 @@
 			{#if images}
 				<div>
 					{#each images as image}
-						<button onclick={() => clickImage(image)}>
+						<button on:click={() => clickImage(image)}>
 							<img src={image} alt={image.split('/').pop()} />
 						</button>
 					{/each}
@@ -53,8 +56,8 @@
 		</div>
 	</div>
 	{#if openImage}
-		<div class="modal-backdrop" onclick={closeModal} onkeydown={handleKeydown} tabindex="0">
-			<div class="modal-content" onclick={handleModalClick}>
+		<div class="modal-backdrop" on:click={closeModal} on:keydown={handleKeydown} tabindex="0">
+			<div class="modal-content" on:click={handleModalClick}>
 				<img src={openImage} alt="Expanded image" />
 			</div>
 		</div>
