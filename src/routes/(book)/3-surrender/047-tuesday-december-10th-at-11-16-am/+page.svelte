@@ -1,0 +1,24 @@
+<script lang="ts">
+	import Obsidian from '$lib/components/Obsidian.svelte';
+</script>
+
+<Obsidian date="Tuesday, December 10th at 11:16 AM" datestamp="2024-12-10">
+	<p>So apparently, pocket likes me.</p>
+	<p>— 11:34 AM —</p>
+	<p>
+		That surprised me. But I asked him what his motivation was for asking if I wanted to watch an
+		anime with him, and he said it's because he liked me and wanted to get to know me more.
+	</p>
+	<p>
+		He told me he actually wanted to tell me much later and do some big romantic gesture, but I
+		asked, so he answered.
+	</p>
+	<p>
+		I just really hope I don't lose sight or stop focusing on who he is as a person. You can't be a
+		lover without first being a friend.
+	</p>
+	<p>
+		I will have to ask him at some point what I should call him if I were to ever introduce him to
+		another friend of mine.
+	</p>
+</Obsidian>

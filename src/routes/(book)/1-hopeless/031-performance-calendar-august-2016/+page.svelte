@@ -1,0 +1,105 @@
+<script lang="ts">
+	import PrintedPage from '$lib/components/PrintedPage.svelte';
+</script>
+
+<PrintedPage>
+	<h2>August 2016</h2>
+	<div class="calendar-key">
+		<p class="calendar-youtube-post">YouTube Posts</p>
+		<p class="calendar-performance">Performances</p>
+		<p class="calendar-important-date">Important Dates</p>
+	</div>
+	<table class="calendar">
+		<colgroup>
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+		</colgroup>
+		<thead>
+			<tr>
+				<th>Sunday</th>
+				<th>Monday</th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+				<th>Thursday</th>
+				<th>Friday</th>
+				<th>Saturday</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th></th>
+				<th><span class="calendar-corner">1</span></th>
+				<th><span class="calendar-corner">2</span></th>
+				<th
+					><span class="calendar-corner">3</span>
+					<div class="calendar-overflow">
+						<p class="calendar-important-date">School Starts</p>
+					</div></th
+				>
+				<th><span class="calendar-corner">4</span></th>
+				<th><span class="calendar-corner">5</span></th>
+				<th>
+					<span class="calendar-corner">6</span>
+					<div class="calendar-overflow">
+						<p class="calendar-youtube-post">10:00 AM Post "Oceans (Where Feet May Fail)"</p>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<span class="calendar-corner">7</span>
+				</th>
+				<th><span class="calendar-corner">8</span></th>
+				<th><span class="calendar-corner">9</span></th>
+				<th><span class="calendar-corner">10</span></th>
+				<th><span class="calendar-corner">11</span></th>
+				<th><span class="calendar-corner">12</span></th>
+				<th>
+					<span class="calendar-corner">13</span>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<span class="calendar-corner">14</span>
+				</th>
+				<th><span class="calendar-corner">15</span></th>
+				<th><span class="calendar-corner">16</span></th>
+				<th><span class="calendar-corner">17</span></th>
+				<th><span class="calendar-corner">18</span></th>
+				<th>
+					<span class="calendar-corner">19</span>
+				</th>
+				<th>
+					<span class="calendar-corner">20</span>
+				</th>
+			</tr>
+			<tr>
+				<th><span class="calendar-corner">21</span></th>
+				<th><span class="calendar-corner">22</span> </th>
+				<th><span class="calendar-corner">23</span></th>
+				<th><span class="calendar-corner">24</span></th>
+				<th><span class="calendar-corner">25</span></th>
+				<th>
+					<span class="calendar-corner">26</span>
+				</th>
+				<th>
+					<span class="calendar-corner">27</span>
+				</th>
+			</tr>
+			<tr>
+				<th><span class="calendar-corner">28</span></th>
+				<th><span class="calendar-corner">29</span></th>
+				<th><span class="calendar-corner">30</span></th>
+				<th><span class="calendar-corner">31</span></th>
+				<th></th>
+				<th></th>
+				<th></th>
+			</tr>
+		</tbody>
+	</table>
+</PrintedPage>

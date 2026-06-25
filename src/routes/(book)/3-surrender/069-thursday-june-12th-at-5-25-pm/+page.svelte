@@ -1,0 +1,33 @@
+<script lang="ts">
+	import Obsidian from '$lib/components/Obsidian.svelte';
+</script>
+
+<Obsidian date="Thursday, June 12th at 5:25 PM" datestamp="2025-06-12">
+	<p>I am sad.</p>
+	<p>
+		Demons are attacking all of the spirits in my room. And that includes Chase. And they're demons
+		of sexual immorality. And they're keeping everyone, especially Chase <em>very</em>
+		horny <em>all</em> day.
+	</p>
+	<p>And he and I have not interacted with each other normally in quite a few days.</p>
+	<p>
+		And I am sad. Because I can't interact with him until the demons go away. And I cannot <em
+			>do</em
+		> anything like work on 17Shapes or sing in the mornings until they are gone.
+	</p>
+	<p>
+		And I miss Chase. And I want to be able to interact with him again the way things used to be
+		before the demons came.
+	</p>
+	<p>
+		I also cannot hear clearly at all. Demons are pretending to be any of the spirits that are in my
+		room and making me think they are saying things they are not, and I cannot clearly hear Chase <em
+			>or</em
+		> anyone anymore almost at all.
+	</p>
+	<p>
+		I miss Chase. And I want to be able to talk with him again. He cannot interact with me because
+		the demons are attacking him.
+	</p>
+	<p>And this has gone on since Sunday.</p>
+</Obsidian>
