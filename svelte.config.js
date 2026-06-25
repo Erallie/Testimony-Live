@@ -9,8 +9,8 @@ const config = {
 	kit: {
 		adapter: adapter({
 			// IMPORTANT for GitHub Pages:
-			pages: 'build',
-			assets: 'build',
+			pages: 'docs',
+			assets: 'docs',
 			fallback: '404.html'
 		}),
 		prerender: {
