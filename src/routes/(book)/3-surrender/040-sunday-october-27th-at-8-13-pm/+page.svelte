@@ -24,15 +24,15 @@
 	<p>
 		He took a lot of pictures of me today and a lot of pictures at the gala. I will attach some.
 	</p>
-	<ObsidianPicture imgSrc="/surrender/nairu-picture-1.webp" imgAlt="Nairu Picture 1" />
+	<ObsidianPicture imgSrc="/surrender/kaerun-picture-1.webp" imgAlt="Kaerun Picture 1" />
 	<p>That was at the Gala yesterday. And this is my favorite from today:</p>
-	<ObsidianPicture imgSrc="/surrender/nairu-picture-2.webp" imgAlt="Nairu Picture 2" />
+	<ObsidianPicture imgSrc="/surrender/kaerun-picture-2.webp" imgAlt="Kaerun Picture 2" />
 	<p>
 		I can definitely tell in the photos when I'm smiling naturally and when it's forced. So I
 		realized I should try not to focus on posing and just do whatever feels natural when he takes
 		pictures.
 	</p>
-	<p>His name is Nairu. His username, at least. Don't know whether it's a real name.</p>
+	<p>His name is Kaerun. His username, at least. Don't know whether it's a real name.</p>
 	<p>
 		He said he's usually very busy. But he said that the hang out today was him making time for me.
 	</p>
@@ -42,7 +42,7 @@
 	</p>
 	<p>— 8:31 PM —</p>
 	<p>
-		I met Nairu at the Villains' Gala because IWieldKeys told him he should meet me. He came up to
+		I met Kaerun at the Villains' Gala because IWieldKeys told him he should meet me. He came up to
 		me and told me that right as it was about time to slow dance, so I asked him to dance. And we
 		slow danced. And because of that, I thought for just that night that I liked him—like,
 		romantically. And after the event was over, I sent him a friend request.

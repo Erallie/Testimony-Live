@@ -5,12 +5,12 @@
 
 <Obsidian date="Monday, October 28th at 6:36 PM" datestamp="2024-10-28">
 	<p>
-		Today I spoke again with Nairu for most of the day. We spoke mainly over dm's in the morning. He
-		had an interview. And then he took a nap that was intended to be 30 minutes but ended up being
-		about I think 2 hours. After that, he got in vr, and I requested to join. He showed me Beyond a
-		Bit and took beautiful photos of me there. I want to attach one of them.
+		Today I spoke again with Kaerun for most of the day. We spoke mainly over dm's in the morning.
+		He had an interview. And then he took a nap that was intended to be 30 minutes but ended up
+		being about I think 2 hours. After that, he got in vr, and I requested to join. He showed me
+		Beyond a Bit and took beautiful photos of me there. I want to attach one of them.
 	</p>
-	<ObsidianPicture imgSrc="/surrender/nairu-picture-3.webp" imgAlt="Nairu Picture 3" />
+	<ObsidianPicture imgSrc="/surrender/kaerun-picture-3.webp" imgAlt="Kaerun Picture 3" />
 	<p>It honestly looks like a painting.</p>
 	<p>
 		But we spoke about very personal stuff today. He told me about his story with his girlfriend.
