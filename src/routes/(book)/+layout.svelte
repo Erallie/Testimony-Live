@@ -80,7 +80,7 @@
 </script>
 
 <div>
-	<button onclick={goBack} aria-label="Back"
+	<button on:click={goBack} aria-label="Back"
 		><svg
 			xmlns="http://www.w3.org/2000/svg"
 			width="50"
@@ -99,7 +99,7 @@
 		</svg></button
 	>
 	{@render children?.()}
-	<button onclick={goForward} aria-label="Next"
+	<button on:click={goForward} aria-label="Next"
 		><svg
 			xmlns="http://www.w3.org/2000/svg"
 			width="50"
