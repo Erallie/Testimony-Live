@@ -1,9 +1,0 @@
-import{a as i,f as n}from"./DLmaUjyT.js";import"./BG9Jzou3.js";import{s as r,f as s,ac as h}from"./Dv85C2F3.js";import{O as d}from"./BCYbf0Pc.js";import{O as p}from"./CUIGrY8c.js";var m=n(`<p>Today I spoke again with Nairu for most of the day. We spoke mainly over dm's in the morning. He
-		had an interview. And then he took a nap that was intended to be 30 minutes but ended up being
-		about I think 2 hours. After that, he got in vr, and I requested to join. He showed me Beyond a
-		Bit and took beautiful photos of me there. I want to attach one of them.</p> <!> <p>It honestly looks like a painting.</p> <p>But we spoke about very personal stuff today. He told me about his story with his girlfriend.
-		And how his mother's death made them realize they had something more than just friendship.</p> <p>And I sent him what I compiled of my testimony, which he is planning on reading tomorrow morning
-		after he has his coffee, and I also told him about me losing several levels of maturity and
-		summarized the loneliness I have felt before Garret, after he ghosted me, and after the falling
-		out with Nora.</p> <p>Very deep things were spoken about today.</p> <p>I also told him about the difficulty making a bond, and specified what I was looking for as
-		someone I could share the important parts of my life with.</p> <p>Again, very deep things.</p> <p>I will probably make that picture I attached my wallpaper when I get on my pc tomorrow.</p> <p>He told me I have gained a friend. ☺️</p>`,1);function l(t){d(t,{date:"Monday, October 28th at 6:36 PM",datestamp:"2024-10-28",children:(o,f)=>{var e=m(),a=r(s(e),2);p(a,{imgSrc:"/surrender/nairu-picture-3.webp",imgAlt:"Nairu Picture 3"}),h(16),i(o,e)}})}const w=Object.freeze(Object.defineProperty({__proto__:null,default:l},Symbol.toStringTag,{value:"Module"}));export{w as _,l as a};

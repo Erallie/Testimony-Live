@@ -1,96 +1,80 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
 
 	let { children } = $props();
-	let pages: string[] = $state([]);
+
+	const pageModules = import.meta.glob('/src/routes/**/[0-9][0-9][0-9]*/+page.svelte');
+
 	let pathname = $derived(page.url.pathname);
 	let act = $derived(pathname.split('/')[1] ?? '');
-	onMount(() => {
-		const pageModules = import.meta.glob('/src/routes/**/[0-9][0-9][0-9]*/+page.svelte', {
-			eager: true
-		});
 
-		// Grab all page folder names under this act
-		pages = Object.keys(pageModules)
+	let pages = $derived(
+		Object.keys(pageModules)
 			.filter((path) => path.includes(`/${act}/`))
 			.map((path) => {
 				const parts = path.split('/');
-				return parts[parts.length - 2]; // e.g. "004-sometopic"
+				return parts[parts.length - 2];
 			})
-			// Sort based on the leading number
-			.sort((a, b) => {
-				const na = parseInt(a.slice(0, 3), 10);
-				const nb = parseInt(b.slice(0, 3), 10);
-				return na - nb;
-			});
-	});
+			.sort((a, b) => parseInt(a.slice(0, 3), 10) - parseInt(b.slice(0, 3), 10))
+	);
+
+	function getNum(p: string) {
+		return parseInt(p.slice(0, 3), 10);
+	}
 
 	function goBack() {
 		const match = pathname.match(/(\d{3})/);
-		if (!match) {
-			switch (act) {
-				case '1-hopeless':
-					window.location.href = '/';
-					break;
-				case '2-the-waiting':
-					window.location.href = '/1-hopeless/065-quote-by-erika-gozar-summer-2016';
-					break;
-				case '3-surrender':
-					window.location.href = '/2-the-waiting/024-a-simple-prayer';
-					break;
+		const isChapterPage = !!match;
+		const currentNum = match ? parseInt(match[1], 10) : -1;
+
+		// 1. If we're inside a chapter, try previous chapter
+		if (isChapterPage) {
+			const prev = [...pages]
+				.map((p) => ({ p, n: getNum(p) }))
+				.filter(({ n }) => n < currentNum)
+				.sort((a, b) => b.n - a.n)[0]?.p;
+
+			if (prev) {
+				goto(`/${act}/${prev}`);
+				return;
 			}
-			return null;
-		}
-		const currentNum = parseInt(match[1], 10);
 
-		// Find the last page number smaller than currentNum
-		const reversed = [...pages].reverse();
-		const prev = reversed.find((p) => {
-			const n = parseInt(p.slice(0, 3), 10);
-			return n < currentNum;
-		});
-
-		if (prev) {
-			window.location.href = prev;
-			return prev;
-		} else {
-			// Go back to the act main page
-			window.location.href = '/' + act;
-			return act;
+			// 2. No previous chapter → go to ACT ROOT
+			goto(`/${act}`);
+			return;
 		}
+
+		// 3. We are at ACT ROOT → go to previous act's LAST chapter
+		const prevActMap: Record<string, string> = {
+			'2-the-waiting': '/1-hopeless/065-quote-by-erika-gozar-summer-2016',
+			'3-surrender': '/2-the-waiting/024-a-simple-prayer'
+		};
+
+		goto(prevActMap[act] ?? '/');
 	}
 
 	function goForward() {
 		const match = pathname.match(/(\d{3})/);
 		const currentNum = match ? parseInt(match[1], 10) : -1;
 
-		// Find the first page number greater than currentNum
-		const next = pages.find((p) => {
-			const n = parseInt(p.slice(0, 3), 10);
-			return n > currentNum;
-		});
+		const next = pages.find((p) => getNum(p) > currentNum);
 
 		if (next) {
-			// Special case: page 000 loads as /act/000-xxx instead of just "000-xxx"
-			if (currentNum < 0) window.location.href = `/${act}/${next}`;
-			else window.location.href = next;
+			goto(`/${act}/${next}`);
+			return;
+		}
 
-			return next;
-		} else {
-			switch (act) {
-				case '1-hopeless':
-					window.location.href = '/2-the-waiting';
-					break;
-				case '2-the-waiting':
-					window.location.href = '/3-surrender';
-					break;
-				case '3-surrender':
-					window.location.href = '/';
-					break;
-			}
-			//!TODO: Add code here for going to the next section
-			return null;
+		switch (act) {
+			case '1-hopeless':
+				goto('/2-the-waiting');
+				break;
+			case '2-the-waiting':
+				goto('/3-surrender');
+				break;
+			case '3-surrender':
+				goto('/');
+				break;
 		}
 	}
 </script>

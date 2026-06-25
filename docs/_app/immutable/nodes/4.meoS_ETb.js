@@ -1,0 +1,1 @@
+import{a as s,f as i}from"../chunks/AoRRwuVa.js";import{c as e,Y as n,r as p}from"../chunks/Dv85C2F3.js";import{s as m}from"../chunks/BTuxM98S.js";var d=i('<div class="the-waiting svelte-14x2b2x"><!></div>');function l(a,r){var o=d(),t=e(o);m(t,()=>r.children??n),p(o),s(a,o)}export{l as component};
