@@ -1,0 +1,4 @@
+import{a as o,f as s}from"./AoRRwuVa.js";import"./BG9Jzou3.js";import{P as n}from"./CSGkLOuW.js";var i=s(`<p class="poem-prose">He just made his bubble nest, and now he waits for his girl to come. Little does he know, he is
+		trapped in a closed tank without any females. He waits. He gets bored and swims around. He comes
+		back to the nest and waits again. It is only a matter of time before his heart breaks and he
+		gives up, abandoning the nest and returning to his daily routine of soulless solitude.</p>`);function r(e){n(e,{title:"The Bubble Nest",date:"September 24, 2019",imgSource:"/the-waiting/the-bubble-nest-banner.webp",children:(t,l)=>{var a=i();o(t,a)}})}const m=Object.freeze(Object.defineProperty({__proto__:null,default:r},Symbol.toStringTag,{value:"Module"}));export{r as _,m as a};
