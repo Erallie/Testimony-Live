@@ -1,0 +1,1 @@
+import{a as e,f as s}from"../chunks/D0SDlArt.js";import"../chunks/BLqvuYMQ.js";var i=s('<div class="background svelte-19wgati"><div class="content svelte-19wgati"><h1 class="svelte-19wgati">Act III</h1> <h2 class="svelte-19wgati">Surrender</h2></div></div>');function v(t){var a=i();e(t,a)}export{v as component};

@@ -1,4 +1,0 @@
-import{a,f as r}from"./C0zHD0t7.js";import"./BhPkACKR.js";import{ac as n}from"./6R8xxhTf.js";import{D as p}from"./Bmvb-xOr.js";var m=r(`<p>A Written Prayer<br/> Tuesday, September 20, 2016</p> <p>יהוה,</p> <p>I really want to</p> <p>—I don’t know what I’m saying.</p> <p>Please — You know when I <del>a</del> sometimes wish I had someone like you, ^<sup>to</sup>whom
-		I can always come and talk <del>to</del>: You would comfort me when I’m lost and give me
-		understanding. I would never be alone, because You’re with me. That’s who You are to me—my
-		closest, intimate father and friend. Why isn’t it like that now? That</p> <p>[Prayer interrupted]</p>`,1);function s(e){p(e,{children:(o,l)=>{var t=m();n(10),a(o,t)}})}const w=Object.freeze(Object.defineProperty({__proto__:null,default:s},Symbol.toStringTag,{value:"Module"}));export{s as _,w as a};
