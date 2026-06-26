@@ -152,5 +152,8 @@
 			width: 20px;
 			height: auto;
 		}
+        &:hover {
+            cursor: pointer;
+        }
 	}
 </style>
