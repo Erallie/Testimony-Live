@@ -1,1 +1,0 @@
-import{a as s,f as e}from"./D0SDlArt.js";import{c as t,M as p,r as m}from"./DmRVXocN.js";import{s as n}from"./CCZXVFx0.js";/* empty css        */var d=e('<div class="svelte-ezjien"><!></div>');function h(r,a){var o=d(),i=t(o);n(i,()=>a.children??p),m(o),s(r,o)}export{h as O};

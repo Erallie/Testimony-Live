@@ -1,0 +1,1 @@
+import{a as e,f as t}from"../chunks/x0EyV6u8.js";import{c as p,M as i,r as m}from"../chunks/DjTDYarQ.js";import{s as n}from"../chunks/CLmdlXHh.js";var d=t('<div class="hopeless svelte-o1w3hq"><!></div>');function f(r,s){var o=d(),a=p(o);n(a,()=>s.children??i),m(o),e(r,o)}export{f as component};

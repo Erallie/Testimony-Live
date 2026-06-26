@@ -1,0 +1,1 @@
+import{a as i,f as o}from"./x0EyV6u8.js";import{t as e}from"./DjTDYarQ.js";import{s as a}from"./Bgqcg6Sb.js";/* empty css        */var s=o('<img class="svelte-oy42o5"/>');function g(m,r){var t=s();e(()=>{a(t,"src",r.imgSrc),a(t,"alt",r.imgAlt)}),i(m,t)}export{g as O};

@@ -1,5 +1,0 @@
-import{a as o,f as i}from"./D0SDlArt.js";import"./BLqvuYMQ.js";import{ac as r}from"./DmRVXocN.js";import{O as s}from"./D4yVmxsL.js";var n=i(`<p>So apparently, pocket likes me.</p> <p>— 11:34 AM —</p> <p>That surprised me. But I asked him what his motivation was for asking if I wanted to watch an
-		anime with him, and he said it's because he liked me and wanted to get to know me more.</p> <p>He told me he actually wanted to tell me much later and do some big romantic gesture, but I
-		asked, so he answered.</p> <p>I just really hope I don't lose sight or stop focusing on who he is as a person. You can't be a
-		lover without first being a friend.</p> <p>I will have to ask him at some point what I should call him if I were to ever introduce him to
-		another friend of mine.</p>`,1);function p(e){s(e,{date:"Tuesday, December 10th at 11:16 AM",datestamp:"2024-12-10",children:(t,m)=>{var a=n();r(10),o(t,a)}})}const f=Object.freeze(Object.defineProperty({__proto__:null,default:p},Symbol.toStringTag,{value:"Module"}));export{p as _,f as a};

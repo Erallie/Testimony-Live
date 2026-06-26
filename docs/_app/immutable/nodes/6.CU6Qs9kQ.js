@@ -1,0 +1,1 @@
+import{a as p,f as e}from"../chunks/x0EyV6u8.js";import"../chunks/DY1Tz5wA.js";import{P as s}from"../chunks/DXQYLJFk.js";var a=e('<h1 class="svelte-1qqvxpv">Act I:<br/>Hopeless</h1>');function i(o){s(o,{children:(r,l)=>{var t=a();p(r,t)},$$slots:{default:!0}})}export{i as component};
