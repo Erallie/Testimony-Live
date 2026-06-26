@@ -7,7 +7,7 @@
 	import '../app.css';
 	let { children } = $props();
 
-	let showWarning = false;
+	let showWarning = $state(false);
 
 	onMount(() => {
 		const stored = localStorage.getItem('testimony_warning');
