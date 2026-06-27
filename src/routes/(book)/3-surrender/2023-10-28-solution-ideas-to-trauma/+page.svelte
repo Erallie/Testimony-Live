@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Diarium from '$lib/components/Diarium.svelte';
 	import Notes from '$lib/components/Notes.svelte';
 </script>
 
