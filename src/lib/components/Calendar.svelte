@@ -196,31 +196,14 @@
 				const splitTitle = titleSlug.split('-');
 				const cap = (s) => (s ? s[0].toUpperCase() + s.slice(1) : '');
 
-				let title;
-
-				if (splitTitle.length == 7 && (splitTitle[6] == 'am' || splitTitle[6] == 'pm')) {
-					title =
-						[cap(splitTitle[0]), cap(splitTitle[1])].join(', ') +
-						' ' +
-						splitTitle[2] +
-						' ' +
-						splitTitle[3] +
-						' ' +
-						splitTitle[4] +
-						':' +
-						splitTitle[5] +
-						' ' +
-						splitTitle[6].toUpperCase();
-				} else {
-					title = splitTitle.map((word) => cap(word) ?? '').join(' ');
-				}
+				const title = splitTitle.map((word) => cap(word) ?? '').join(' ');
 				console.log('title', title);
 				console.log('titleSlug', titleSlug);
 				const url = '/' + splitPath.at(-3) + '/' + splitPath.at(-2);
 				return {
 					path,
 					url,
-					title: title
+					title
 				};
 			});
 		console.log('selected date:', str);
