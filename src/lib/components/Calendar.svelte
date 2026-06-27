@@ -643,8 +643,8 @@
 {#if matchingPages?.length}
 	<div class="page-previews">
 		{#each matchingPages as p}
-			<a href={p.url}>
-				<button class="preview">
+			<a class="preview-link" href={p.url}>
+				<button class="preview-button">
 					{p.title}
 				</button></a
 			>
@@ -912,5 +912,15 @@
 	}
 	button {
 		font-family: inherit;
+	}
+
+	.preview-link {
+		display: block;
+		width: 100%;
+		margin: 12px 0;
+	}
+	.preview-button {
+		width: 100%;
+		border-radius: 20px;
 	}
 </style>

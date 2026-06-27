@@ -85,6 +85,9 @@
 		flex-shrink: 0;
 		flex-grow: 0;
 		padding: 10px;
+
+		max-height: 100dvh;
+		overflow-y: auto;
 	}
 	div.bar {
 		background-color: #504ea0;

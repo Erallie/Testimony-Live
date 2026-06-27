@@ -41,7 +41,9 @@
 		flex-grow: 0;
 
 		& > .calendar-container {
+			max-height: calc(100dvh - 40px - 20px - 2px);
 			padding: 10px;
+			overflow-y: auto;
 		}
 	}
 	div.obsidian {
