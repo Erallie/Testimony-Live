@@ -88,7 +88,7 @@
 		I thought I'd write that part too because it was also on my mind, and I was thinking about both
 		parts of the dream while I was working today.
 	</p>
-	<p>— 8:14 PM —</p>
+	<p>— 8:14 PM —</p>
 	<p>Sorry I just finished re-reading what I just wrote about the dream.</p>
 	<p>I got sidetracked with writing that.</p>
 	<p>
