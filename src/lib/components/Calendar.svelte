@@ -907,8 +907,14 @@
 		width: 100%;
 		margin: 12px 0;
 	}
-	.preview-button {
+	button.preview-button {
 		width: 100%;
-		border-radius: 20px;
+		border: none;
+		border-radius: 12px;
+		padding: 10px;
+		cursor: pointer;
+	}
+	h2.previews-heading {
+		text-align: left;
 	}
 </style>
