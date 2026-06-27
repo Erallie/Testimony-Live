@@ -16,7 +16,6 @@
 <style>
 	div.notes-background {
 		width: 100%;
-		position: fixed;
 		height: 100dvh;
 		top: 0;
 		left: 0;

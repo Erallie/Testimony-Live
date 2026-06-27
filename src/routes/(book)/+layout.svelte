@@ -84,7 +84,7 @@
 	}
 </script>
 
-<div>
+<div class="buttons-container">
 	<button on:click={goBack} aria-label="Back"
 		><svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -97,13 +97,15 @@
 				points="50,0 0,50 50,100"
 				fill="none"
 				stroke="currentColor"
-				stroke-width="20"
+				stroke-width="10"
 				stroke-linecap="round"
 				stroke-linejoin="round"
 			/>
 		</svg></button
 	>
-	{@render children?.()}
+	<div class="layout-content">
+		{@render children?.()}
+	</div>
 	<button on:click={goForward} aria-label="Next"
 		><svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -116,7 +118,7 @@
 				points="0,0 50,50 0,100"
 				fill="none"
 				stroke="currentColor"
-				stroke-width="20"
+				stroke-width="10"
 				stroke-linecap="round"
 				stroke-linejoin="round"
 			/>
@@ -125,40 +127,42 @@
 </div>
 
 <style>
+	.buttons-container {
+		display: flex;
+		flex-direction: row;
+	}
+	div.layout-content {
+		flex: 1;
+		height: 100dvh;
+		overflow-y: auto;
+	}
 	button {
-		position: fixed;
-		top: 50%;
-		transform: translateY(-50%);
+		flex: 0;
+		flex-grow: 0;
+		flex-shrink: 0;
+		width: 36px;
 		z-index: 100;
 
 		border: none;
-		border-radius: 8px;
 
 		padding: 8px;
-		background: white;
+		background: #101010;
 
 		line-height: 0;
 		font-size: 0;
 
-		display: inline-flex;
 		align-items: center;
 		justify-content: center;
-
-		&:first-child {
-			left: 12px;
-		}
-
-		&:last-child {
-			right: 12px;
-		}
 
 		& > svg {
 			display: block;
 			width: 20px;
 			height: auto;
+			color: white;
 		}
 		&:hover {
 			cursor: pointer;
+			background-color: #1e1e1e;
 		}
 	}
 </style>

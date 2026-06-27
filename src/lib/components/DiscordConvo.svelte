@@ -5,19 +5,17 @@
 	let { contact, children }: TextProps = $props();
 </script>
 
-<Portal target="body">
-	<div class="texts">
-		<div class="heading"><h2>{contact}</h2></div>
-		{@render children?.()}
-	</div>
-</Portal>
+<div class="texts">
+	<div class="heading"><h2>{contact}</h2></div>
+	{@render children?.()}
+</div>
 
 <style>
 	div.texts {
 		background-color: #323339;
 
 		overflow-y: auto;
-		padding: 60px 20px;
+		padding: 20px;
 		margin: 0;
 		color: white;
 		font-family: 'Inter';
