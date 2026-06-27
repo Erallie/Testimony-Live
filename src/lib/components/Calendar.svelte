@@ -6,6 +6,8 @@
 	import localeData from 'dayjs/plugin/localeData';
 	import weekOfYear from 'dayjs/plugin/weekOfYear';
 
+	import { page } from '$app/state';
+
 	// dayjs.extend(isToday);
 	dayjs.extend(isSameOrBefore);
 	dayjs.extend(isSameOrAfter);
@@ -139,6 +141,8 @@
 		return range;
 	}
 
+	let matchingPages = $state([]);
+	const pageModules = import.meta.glob('/src/routes/**/+page.svelte', { eager: true });
 	async function selectDate(str) {
 		const date = dayjs(str);
 		if (isDateDisabled(date)) return;
@@ -176,6 +180,49 @@
 		}
 
 		currentDate = str;
+
+		// #region custom code
+
+		matchingPages = Object.entries(pageModules)
+			.filter(([path]) => {
+				const fileName = path.split('/').at(-2) ?? '';
+				return fileName.startsWith(str);
+			})
+			.map(([path]) => {
+				const fileName = path.split('/').at(-2) ?? '';
+				// remove leading date prefix (optional but matches your structure)
+				const titleSlug = fileName.replace(/^(?:\d+-)*/, '');
+				const splitTitle = titleSlug.split('-');
+				const cap = (s) => (s ? s[0].toUpperCase() + s.slice(1) : '');
+
+				let title;
+
+				if (splitTitle.length == 7 && (splitTitle[6] == 'am' || splitTitle[6] == 'pm')) {
+					title =
+						[cap(splitTitle[0]), cap(splitTitle[1])].join(', ') +
+						' ' +
+						splitTitle[2] +
+						' ' +
+						splitTitle[3] +
+						' ' +
+						splitTitle[4] +
+						':' +
+						splitTitle[5] +
+						' ' +
+						splitTitle[6].toUpperCase();
+				} else {
+					title = splitTitle.map((word) => cap(word) ?? '').join(' ');
+				}
+				console.log('title', title);
+				console.log('titleSlug', titleSlug);
+				return {
+					path,
+					title: title
+				};
+			});
+		console.log('selected date:', str);
+		console.log('matches:', matchingPages);
+		// #endregion
 
 		onDateChange({
 			dates: selectedDates,
@@ -590,6 +637,16 @@
 	{/if}
 </div>
 
+{#if matchingPages?.length}
+	<div class="page-previews">
+		{#each matchingPages as p}
+			<div class="preview">
+				{p.title}
+			</div>
+		{/each}
+	</div>
+{/if}
+
 <style>
 	.calendar {
 		display: flex;
@@ -599,7 +656,6 @@
 		margin: 0 auto;
 		font-size: 14px;
 		font-weight: 400;
-		height: 100%;
 	}
 
 	.calendar-header {
