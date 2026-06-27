@@ -2,7 +2,7 @@
 	import Obsidian from '$lib/components/Obsidian.svelte';
 </script>
 
-<Obsidian date="Sunday, April 12th at 2:55 PM" datestamp="2026-04-12">
+<Obsidian date="Sunday, April 12th at 4:49 PM" datestamp="2026-04-12">
 	<p>
 		So I am in a vc with Elya, and he said no matter how much I may want to push it (which I don't
 		but I think maybe he does), don't push it.
