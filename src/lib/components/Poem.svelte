@@ -4,16 +4,18 @@
 	let { imgSource, title, date, children }: PoemProps = $props();
 </script>
 
-<div class="full-container">
-	<div class="heading">
-		<img src={imgSource} alt="Poem Banner" />
-		<hgroup>
-			<h2 class="poem-title">{@html title}</h2>
-			<h3 class="poem-title">{@html date}</h3>
-		</hgroup>
-	</div>
-	<div class="poem-text">
-		{@render children?.()}
+<div class="container-for-scroll">
+	<div class="full-container">
+		<div class="heading">
+			<img src={imgSource} alt="Poem Banner" />
+			<hgroup>
+				<h2 class="poem-title">{@html title}</h2>
+				<h3 class="poem-title">{@html date}</h3>
+			</hgroup>
+		</div>
+		<div class="poem-text">
+			{@render children?.()}
+		</div>
 	</div>
 </div>
 
@@ -26,6 +28,11 @@
 		border-radius: 60px;
 		overflow: clip;
 		padding-bottom: 4px;
+	}
+	div.container-for-scroll {
+		width: 100%;
+		height: 100dvh;
+		overflow-y: auto;
 	}
 
 	div.heading {
