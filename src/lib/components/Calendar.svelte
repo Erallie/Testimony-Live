@@ -189,7 +189,8 @@
 				return fileName.startsWith(str);
 			})
 			.map(([path]) => {
-				const fileName = path.split('/').at(-2) ?? '';
+				const splitPath = path.split('/');
+				const fileName = splitPath.at(-2) ?? '';
 				// remove leading date prefix (optional but matches your structure)
 				const titleSlug = fileName.replace(/^(?:\d+-)*/, '');
 				const splitTitle = titleSlug.split('-');
@@ -215,8 +216,10 @@
 				}
 				console.log('title', title);
 				console.log('titleSlug', titleSlug);
+				const url = '/' + splitPath.at(-3) + '/' + splitPath.at(-2);
 				return {
 					path,
+					url,
 					title: title
 				};
 			});
@@ -640,9 +643,11 @@
 {#if matchingPages?.length}
 	<div class="page-previews">
 		{#each matchingPages as p}
-			<div class="preview">
-				{p.title}
-			</div>
+			<a href={p.url}>
+				<button class="preview">
+					{p.title}
+				</button></a
+			>
 		{/each}
 	</div>
 {/if}
