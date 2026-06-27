@@ -1,1 +1,0 @@
-import{a as i,f as o}from"../chunks/x0EyV6u8.js";import"../chunks/DY1Tz5wA.js";/* empty css                */var r=o('<div class="svelte-f409yi"><h1 class="svelte-f409yi">Act II:<br/>The Waiting</h1></div>');function m(t){var a=r();i(t,a)}export{m as component};

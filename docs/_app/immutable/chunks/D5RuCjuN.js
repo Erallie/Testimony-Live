@@ -1,0 +1,3 @@
+import{a,f as l}from"./BWVQ_Zlk.js";import"./KsUioBq2.js";import{a8 as r}from"./AzAd-D03.js";import{D as i}from"./Cu8zI4_a.js";var n=l(`<p>A Written Prayer<br/> September 2016</p> <p>I want to do something.</p> <p>Father, please help me.</p> <p>Let me remember that you will fix it and establish your will—all that I need to do is to
+		continue <del>is</del> in all that You taught me. —I need to walk in <del>you</del> Your Love and follow You. You will
+		take care of me, <del>and all tha</del> and I will have rest.</p>`,1);function p(e){i(e,{children:(t,d)=>{var o=n();r(6),a(t,o)}})}const _=Object.freeze(Object.defineProperty({__proto__:null,default:p},Symbol.toStringTag,{value:"Module"}));export{_,p as a};
