@@ -13,7 +13,6 @@
 	div.diary {
 		width: 500px;
 		max-width: 90%;
-		height: calc(100dvh - 100px);
 		margin: auto;
 		position: relative;
 		& img {
