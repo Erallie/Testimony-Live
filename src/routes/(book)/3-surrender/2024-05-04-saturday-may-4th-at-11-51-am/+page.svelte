@@ -3,12 +3,12 @@
 </script>
 
 <Diarium date="Saturday, May 4th at 11:51 AM" datestamp="2024-05-04">
-	<p dir="auto">Hello Journal.</p>
-	<p dir="auto">
+	<p>Hello Journal.</p>
+	<p>
 		So... yesterday was horrible. I don't want to go into why. But it was horrible throughout the
 		entire day, starting sometime in the morning. And nothing was resolved.
 	</p>
-	<p dir="auto">
+	<p>
 		I want to state that I stated yesterday that I do not feel like I can bring things up to Garret
 		and feel safe about doing so. For two inter-related reasons: I feel as though his reactions to
 		my concerns when I go to confide in him would be met with a harsh, abrasive, and judgmental
@@ -18,8 +18,8 @@
 		swayed by others to distrust him. And all of those things are things that sort of seem like his
 		deepest fears in general. So like, yeah.
 	</p>
-	<p dir="auto">I hate life.</p>
-	<p dir="auto">
+	<p>I hate life.</p>
+	<p>
 		Anyway, there are two options I brought up to myself today: either one, we stay together while
 		neither of us are ready to deal with each other's bullshit, flaws, and shortcomings, and just
 		power through it until we overcome it, like my family did for each other; or two, we break up to
@@ -32,7 +32,7 @@
 		God. I have to weigh what I am potentially forever losing against the problems and the pain that
 		what I currently have inflicts upon me.
 	</p>
-	<p dir="auto">
+	<p>
 		I have to remember more clearly what I previously was so dearly lacking, and accept reverting
 		back to that state of loneliness. What is better? And what is more easy to deal with? And what
 		will be best for us in the end? Can I reasonably expect either me or him to power through these
@@ -40,7 +40,7 @@
 		capacity with which to support our individual selves entirely before delving into something like
 		this?
 	</p>
-	<p dir="auto">
+	<p>
 		I can't do this. And I don't have help. Because the things I need help with are things that
 		Garret can't help me with. So like, what do I do?
 	</p>
