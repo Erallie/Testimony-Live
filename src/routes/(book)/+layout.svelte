@@ -16,24 +16,27 @@
 				const parts = path.split('/');
 				return parts[parts.length - 2];
 			})
-			.sort((a, b) => parseInt(a.slice(0, 3), 10) - parseInt(b.slice(0, 3), 10))
+			.sort((a, b) => getPrefix(a).localeCompare(getPrefix(b)))
 	);
 
-	function getNum(p: string) {
-		return parseInt(p.slice(0, 3), 10);
+	const PREFIX_REGEX = /^\d+(?:-\d+)*/;
+
+	function getPrefix(p: string) {
+		return p.match(PREFIX_REGEX)?.[0] ?? '';
 	}
 
 	function goBack() {
-		const match = pathname.match(/(\d{3})/);
-		const isChapterPage = !!match;
-		const currentNum = match ? parseInt(match[1], 10) : -1;
+		const segments = pathname.split('/').filter(Boolean);
+		const isChapterPage = segments.length === 2;
+
+		const currentPage = segments[1] ?? '';
+		const currentPrefix = getPrefix(currentPage);
 
 		// 1. If we're inside a chapter, try previous chapter
 		if (isChapterPage) {
 			const prev = [...pages]
-				.map((p) => ({ p, n: getNum(p) }))
-				.filter(({ n }) => n < currentNum)
-				.sort((a, b) => b.n - a.n)[0]?.p;
+				.filter((p) => getPrefix(p) < currentPrefix)
+				.sort((a, b) => getPrefix(b).localeCompare(getPrefix(a)))[0];
 
 			if (prev) {
 				goto(`/${act}/${prev}`);
@@ -55,10 +58,12 @@
 	}
 
 	function goForward() {
-		const match = pathname.match(/(\d{3})/);
-		const currentNum = match ? parseInt(match[1], 10) : -1;
+		const segments = pathname.split('/').filter(Boolean);
 
-		const next = pages.find((p) => getNum(p) > currentNum);
+		const currentPage = segments[1] ?? '';
+		const currentPrefix = getPrefix(currentPage);
+
+		const next = pages.find((p) => getPrefix(p) > currentPrefix);
 
 		if (next) {
 			goto(`/${act}/${next}`);
@@ -152,8 +157,8 @@
 			width: 20px;
 			height: auto;
 		}
-        &:hover {
-            cursor: pointer;
-        }
+		&:hover {
+			cursor: pointer;
+		}
 	}
 </style>
