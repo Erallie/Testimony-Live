@@ -412,131 +412,137 @@
 
 	{#if showDatePicker && allowSelect}
 		<div class="date-picker">
-			<div class="selector-row">
-				<div class="selector">
-					<button aria-label="Next Day" onclick={() => selectorNext('day')} class="selector-btn">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="16"
-							height="16"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
+			<div class="selectors">
+				<div class="selector-row">
+					<div class="selector">
+						<button aria-label="Next Day" onclick={() => selectorNext('day')} class="selector-btn">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path d="m18 15-6-6-6 6" />
+							</svg>
+						</button>
+						<div class="selector-value">{tempDay}</div>
+						<button
+							aria-label="Previous Day"
+							onclick={() => selectorPrevious('day')}
+							class="selector-btn"
 						>
-							<path d="m18 15-6-6-6 6" />
-						</svg>
-					</button>
-					<div class="selector-value">{tempDay}</div>
-					<button
-						aria-label="Previous Day"
-						onclick={() => selectorPrevious('day')}
-						class="selector-btn"
-					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="16"
-							height="16"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						>
-							<path d="m6 9 6 6 6-6" />
-						</svg>
-					</button>
-				</div>
-			</div>
-
-			<div class="selector-row">
-				<div class="selector">
-					<button
-						aria-label="Next Month"
-						onclick={() => selectorNext('month')}
-						class="selector-btn"
-					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="16"
-							height="16"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						>
-							<path d="m18 15-6-6-6 6" />
-						</svg>
-					</button>
-					<div class="selector-value">
-						{dayjs()
-							.month(parseInt(tempMonth) - 1)
-							.format('MMM')}
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path d="m6 9 6 6 6-6" />
+							</svg>
+						</button>
 					</div>
-					<button
-						aria-label="Previous Month"
-						onclick={() => selectorPrevious('month')}
-						class="selector-btn"
-					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="16"
-							height="16"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						>
-							<path d="m6 9 6 6 6-6" />
-						</svg>
-					</button>
 				</div>
-			</div>
 
-			<div class="selector-row">
-				<div class="selector">
-					<button aria-label="Next Year" onclick={() => selectorNext('year')} class="selector-btn">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="16"
-							height="16"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
+				<div class="selector-row">
+					<div class="selector">
+						<button
+							aria-label="Next Month"
+							onclick={() => selectorNext('month')}
+							class="selector-btn"
 						>
-							<path d="m18 15-6-6-6 6" />
-						</svg>
-					</button>
-					<div class="selector-value">{tempYear}</div>
-					<button
-						aria-label="Previous Year"
-						onclick={() => selectorPrevious('year')}
-						class="selector-btn"
-					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="16"
-							height="16"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path d="m18 15-6-6-6 6" />
+							</svg>
+						</button>
+						<div class="selector-value">
+							{dayjs()
+								.month(parseInt(tempMonth) - 1)
+								.format('MMM')}
+						</div>
+						<button
+							aria-label="Previous Month"
+							onclick={() => selectorPrevious('month')}
+							class="selector-btn"
 						>
-							<path d="m6 9 6 6 6-6" />
-						</svg>
-					</button>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path d="m6 9 6 6 6-6" />
+							</svg>
+						</button>
+					</div>
+				</div>
+
+				<div class="selector-row">
+					<div class="selector">
+						<button
+							aria-label="Next Year"
+							onclick={() => selectorNext('year')}
+							class="selector-btn"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path d="m18 15-6-6-6 6" />
+							</svg>
+						</button>
+						<div class="selector-value">{tempYear}</div>
+						<button
+							aria-label="Previous Year"
+							onclick={() => selectorPrevious('year')}
+							class="selector-btn"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path d="m6 9 6 6 6-6" />
+							</svg>
+						</button>
+					</div>
 				</div>
 			</div>
 
@@ -699,12 +705,19 @@
 
 	.date-picker {
 		display: flex;
-		flex-direction: column;
-		gap: 12px;
+		flex-direction: row;
+		gap: 24px;
 		padding: 24px;
 		align-items: center;
 		justify-content: center;
 		min-height: 192px;
+	}
+	.selectors {
+		display: flex;
+		flex-direction: row;
+		gap: 12px;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.selector-row {
