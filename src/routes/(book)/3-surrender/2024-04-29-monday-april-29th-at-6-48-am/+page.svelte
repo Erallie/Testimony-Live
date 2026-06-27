@@ -3,26 +3,26 @@
 </script>
 
 <Diarium date="Monday, April 29th at 6:48 AM" datestamp="2024-04-29">
-	<p dir="auto">Hello Diary.</p>
-	<p dir="auto">
+	<p>Hello Diary.</p>
+	<p>
 		Things were going well. We were working on Garret's and my avatars, and then something brought
 		us back to Sky: Children of the Light. I bought seasons passes for both him and me, and then I
 		decorated my nest all nice.
 	</p>
-	<p dir="auto">
+	<p>
 		But yesterday, everything was horrible, and it seems as though I became toxic again because of
 		it.
 	</p>
-	<p dir="auto">
+	<p>
 		I just wanted to record that. Because no es happy. No es fun. And I woke up this morning and
 		remembered all that, and then it killed my mood.
 	</p>
-	<p dir="auto">Well, at least we took photos of Garret and I in my nest in sky.</p>
-	<p dir="auto">
+	<p>Well, at least we took photos of Garret and I in my nest in sky.</p>
+	<p>
 		Those photos were taken before Garret purchased his really nice cape. He now looks like a
 		prince. Hopefully, I can show more photos of it later.
 	</p>
-	<p dir="auto">
+	<p>
 		But anyway, back to what I was saying with the thing yesterday, Slice was trying to manipulate
 		me away from Garret or something like that. And I held my ground, but then I became concerned
 		that Slice was gonna sway me away from Garret, and I didn't trust myself not to be swayed. And
@@ -33,16 +33,16 @@
 		to hear what I was saying because of all the screaming and yelling, and so I said, "I don't
 		fucking care" and then left the call.
 	</p>
-	<p dir="auto">
+	<p>
 		After that, I was doing chores to cope, and I took a shower, but in the middle of the shower, I
 		was no longer feeling like doing that to cope, so the shower took waay too long.
 	</p>
-	<p dir="auto">
+	<p>
 		Garret was spam calling me during the shower, and after I got out of the shower, Bunnibeth was
 		spam calling me, because Garret was so concerned that he asked Bunnibeth to try to get in touch
 		with me.
 	</p>
-	<p dir="auto">
+	<p>
 		Well, I messaged Garret an apology at some point in the afternoon, and he didn't respond, so an
 		hour later, Bunnibeth reached out again, and I answered and told her I messaged Garret an hour
 		ago, and she messaged him and told me that he said he was just giving me time to enjoy the game
@@ -51,7 +51,7 @@
 		like no one loves me again or something, so I apologized even more and thanked him for loving me
 		and caring for me and putting up with my bullshit.
 	</p>
-	<p dir="auto">
+	<p>
 		But then a short while later, Bunnibeth and Plasma called me again, and I briefly explained to
 		them what I was trying to ask help for from Garret, and they said he thought I was trying to
 		break up with him, and I said, "Yeah I don't know why he always thinks that." And then after
@@ -59,20 +59,20 @@
 		express to him what I expressed to them saying that I was trying to express it to him, but I was
 		screaming and shouting, so obviously it didn't work.
 	</p>
-	<p dir="auto">
+	<p>
 		And in the couple hours after that, I was super annoyed and aggravated, and I felt like lying on
 		the ground, but since I took a shower, I didn't want to get my hair dirty, so I lay down on the
 		mat for VR, and I was thinking all these negative thoughts.
 	</p>
-	<p dir="auto">
+	<p>
 		Oh, I forgot to mention that earlier, like in the morning, I said something either in tongues or
 		in gibberish, and then it seemed like a demon was starting to latch onto me.
 	</p>
-	<p dir="auto">
+	<p>
 		Well, when I was lying on that mat, I felt like the demon was just like influencing me and
 		making me cry more than I needed to.
 	</p>
-	<p dir="auto">
+	<p>
 		Later on, Bunnibeth, Plasma, and Garret called me in a group call, and then I asked if he
 		understood what Bunnibeth and Plasma said to them, and after further probing, it was clear that
 		through whatever happened in their conversation, it wasn't clear to him what I was trying to ask
@@ -85,7 +85,7 @@
 		time because of whatever walls I might have put up or maybe I was resigned enough to not react
 		to it.
 	</p>
-	<p dir="auto">
+	<p>
 		Well before I continue this unpleasant story (also, if you're reading this, I'm sorry you have
 		to put up with my current negativity), it's important to note that one thing I said when I was
 		on that mat—well actually, I also said it before I apologized and in my apology—was that I
@@ -94,7 +94,7 @@
 		unstable emotional state and be understanding of Garret's tone when I was trying to ask for
 		help.
 	</p>
-	<p dir="auto">
+	<p>
 		I still stand by that, but I don't know if I can reasonably expect myself to be able to do that.
 		When I was thinking that, it was more of a self-neglecting type of thought. And when I was on
 		the mat, I again felt like I was alone, and I needed to do all of this emotional stuff myself.
@@ -103,7 +103,7 @@
 		although I don't logically know anything else that could have reasonably been done in order to avoid
 		that unpleasant situation.
 	</p>
-	<p dir="auto">
+	<p>
 		Well anyway, back to the story, after a couple hours, I came back to the call, and I was
 		initially trying to resolve the stuff. I didn't exactly feel <em>ready</em> to express myself and
 		deal with it, but I thought I should, I think. I don't exactly remember why I made the choice to deal
@@ -112,7 +112,7 @@
 		just expressing my anger, and right after we were about to shift focus again, she demanded my apology,
 		and then I knew that if I didn't apologize, she'd probably remove me again, so I did apologize.
 	</p>
-	<p dir="auto">
+	<p>
 		Anyway, I don't really know whether everything was sorted, because like, I don't feel like it
 		was resolved right now this morning. But eventually, things got calmer, and Bunnibeth was
 		falling asleep, so they asked if we could finish up ourselves, and when they were leaving Plasma
@@ -124,7 +124,7 @@
 		offending me but being real. But still, I don't think Garret did much that you can call toxic.
 		And it just makes me feel bad that I'm toxic again.
 	</p>
-	<p dir="auto">
+	<p>
 		Well anyway, we didn't discuss much else in the private call between just Garret and me, except
 		that I acknowledge that I have a lot I need to make up to him. He said that that morning, he had
 		a list of things he wanted to praise me for, and everything that happened that day completely
@@ -135,23 +135,23 @@
 		context in which and the feelings with which the things he mentioned were said, as though I was
 		dissociating.
 	</p>
-	<p dir="auto">
+	<p>
 		I currently find it weird that I'm blaming things on my trauma again, when I don't currently
 		think that that's a good excuse for my toxicity. I'm pretty sure whatever trauma itself isn't
 		the thing causing the toxicity anyway. But something else.
 	</p>
-	<p dir="auto">
+	<p>
 		Anyway, I fell asleep, and this morning I woke up, and the first thing I remembered was that I
 		need to make it up to him today. And then like I said earlier in this entry, that killed my
 		mood. This is not a happy morning.
 	</p>
-	<p dir="auto">
+	<p>
 		I asked God to let today be a good day, and let His will be done today. I do hope that like... I
 		stop being toxic soon. I don't know what to do to stop that. Maybe I need to start being more
 		positive to myself in my head again and also start being more realistic and recognizing when I
 		couldn't have done something better.
 	</p>
-	<p dir="auto">
+	<p>
 		I don't know whether I could've avoided that thing yesterday morning with the screaming, and I
 		feel like if I had <em>tried</em> to ignore my emotions and be more understanding of his tone, that
 		would've been unhealthy because I wouldn't have been respecting myself. But idk. Father, if there's
@@ -160,18 +160,18 @@
 		myself and my emotions and acknowledge when I couldn't have done something better. I don't know what
 		to do.
 	</p>
-	<p dir="auto">
+	<p>
 		Anyway, I hope today can be a better day. I prayed that it would. It doesn't <em>look</em> like
 		it would be a <em>good</em> day, but you know, hopefully it can at least be <em>better,</em> and hopefully
 		it can still be a good day regardless because I asked God to let it be.
 	</p>
-	<p dir="auto">
+	<p>
 		I should probably tell Garret that if I did what I said I should do in my apology I would feel
 		like I wouldn't be respecting my own emotions, and that I feel like that would actually be
 		unhealthy for me to do.
 	</p>
-	<p dir="auto">— 7:36 AM —</p>
-	<p dir="auto">
+	<p>— 7:36 AM —</p>
+	<p>
 		Sorry I just read through my entire entry again before closing it. I'm currently playing Sky:
 		Children of the light. I was trying to play it to cope. And then Garret joined me, and then he
 		went AFK, and I got a spirit, and I needed to wait for him to interact with the spirit before we
@@ -180,14 +180,14 @@
 		again, and I messaged him on discord telling me to give me a sec and saying that I'm writing in
 		my diary and telling him to feel free to continue more without me.
 	</p>
-	<p dir="auto">
+	<p>
 		He's probably finished all or at least most of the Hidden Forest by this time. I don't know
 		whether I'll try to go through it again myself, or just go home and join him. I still need the
 		rest of the seasonal candles that are lit throughout the realm, and he probably got more winged
 		lights than I did. But that's okay. I told him to go on without me. So I'll just catch up
 		whenever that happens today.
 	</p>
-	<p dir="auto">
+	<p>
 		But anyway, I'm gonna end this entry here. Father, again, it would be great if you would let
 		today be a good day. And help me to stop being toxic as soon as reasonably possible. To remind
 		myself again, that's like, being kind to myself in my head, and recognizing my own emotions and
