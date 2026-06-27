@@ -8,7 +8,7 @@
 <style>
 	img {
 		max-width: 100%;
-		max-height: 100dvh;
+		max-height: calc(100dvh - 40px);
 		z-index: -100;
 	}
 </style>
