@@ -29,8 +29,8 @@
 <div class="diarium">
 	<div class="sidebar">
 		<Calendar
-			minDate="2024-1-17"
-			maxDate="2026-1-19"
+			minDate="2023-10-28"
+			maxDate="2026-6-02"
 			currentDate={datestamp}
 			{allowedDates}
 			allowSelect={true}

@@ -13,8 +13,8 @@
 		<div class="calendar-container">
 			<!-- Put calendar and stuff here -->
 			<Calendar
-				minDate="2024-1-17"
-				maxDate="2026-6-20"
+				minDate="2023-10-28"
+				maxDate="2026-6-02"
 				currentDate={datestamp}
 				{allowedDates}
 				allowSelect={true}
