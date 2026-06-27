@@ -6,6 +6,7 @@
 	import isSameOrAfter from 'dayjs/plugin/isSameOrAfter';
 	import localeData from 'dayjs/plugin/localeData';
 	import weekOfYear from 'dayjs/plugin/weekOfYear';
+	import { onMount } from 'svelte';
 
 	import { page } from '$app/state';
 
@@ -346,6 +347,11 @@
 			tempYear = (parseInt(tempYear) - 1).toString();
 		}
 	}
+	onMount(() => {
+		if (currentDate) {
+			selectDate(currentDate);
+		}
+	});
 </script>
 
 <div
