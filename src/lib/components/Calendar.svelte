@@ -1,5 +1,6 @@
 <script>
 	import dayjs from 'dayjs';
+	import advancedFormat from 'dayjs/plugin/advancedFormat';
 	// import isToday from 'dayjs/plugin/isToday';
 	import isSameOrBefore from 'dayjs/plugin/isSameOrBefore';
 	import isSameOrAfter from 'dayjs/plugin/isSameOrAfter';
@@ -13,6 +14,7 @@
 	dayjs.extend(isSameOrAfter);
 	dayjs.extend(localeData);
 	dayjs.extend(weekOfYear);
+	dayjs.extend(advancedFormat);
 
 	import { fly } from 'svelte/transition';
 
@@ -200,10 +202,12 @@
 				console.log('title', title);
 				console.log('titleSlug', titleSlug);
 				const url = '/' + splitPath.at(-3) + '/' + splitPath.at(-2);
+				const heading = dayjs(str).format('dddd, MMMM Do, YYYY');
 				return {
 					path,
 					url,
-					title
+					title,
+					heading
 				};
 			});
 		console.log('selected date:', str);
@@ -624,7 +628,8 @@
 </div>
 
 {#if matchingPages?.length}
-	<div class="page-previews">
+	<div class="previews">
+		<h2 class="previews-heading">{matchingPages[0].heading}</h2>
 		{#each matchingPages as p}
 			<a class="preview-link" href={p.url}>
 				<button class="preview-button">
