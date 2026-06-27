@@ -13,14 +13,14 @@
 		it's worth it to remember it.
 	</p>
 	<p>
-		Yesterday, after I identified what I did <ObsidianLink
-			href="036-wednesday-september-11th-at-9-08-am">here</ObsidianLink
+		Yesterday, after I identified what I did <ObsidianLink href="2024-09-11-trying-to-remember"
+			>here</ObsidianLink
 		>, things happened where I brought things up, and Dave was trying to help, and I thought he did
 		or something to an extent (maybe; I'm not sure). I was anticipating calling him again when he
 		woke up for basically the rest of the day. And I woke up thinking his name, probably because I
 		didn't get to call him last night. He basically expressed he does not want to pursue anything,
 		and it makes sense for the reasons I described <ObsidianLink
-			href="037-thursday-september-12th-at-8-51-am">here</ObsidianLink
+			href="2024-09-12-08-51-no-one-persons-responsibility">here</ObsidianLink
 		>.
 	</p>
 	<p>
