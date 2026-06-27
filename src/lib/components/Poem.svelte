@@ -65,4 +65,9 @@
 	div.poem-text {
 		margin: 20px 40px;
 	}
+	@media (max-width: 480px) {
+		div.container-for-scroll {
+			height: calc(100dvh - 56px);
+		}
+	}
 </style>

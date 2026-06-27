@@ -24,4 +24,10 @@
 		overflow-y: auto;
 		border-radius: 2px;
 	}
+	@media (max-width: 480px) {
+		section {
+			max-width: 80%;
+			max-height: calc(100dvh - 140px - 56px);
+		}
+	}
 </style>
