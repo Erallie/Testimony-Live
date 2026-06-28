@@ -19,13 +19,14 @@
 			position: absolute;
 			width: 200%;
 			transform: translate(-50%, 0);
-			z-index: -1;
+			z-index: 0;
 		}
 		& > div {
 			padding: 40px;
 			padding-top: calc(1.8em + 3px);
 			height: 100%;
 			overflow-y: auto;
+			isolation: isolate;
 		}
 		font-family: Caveat, 'Playpen Sans Hebrew', cursive;
 		font-size: 1.4em;
