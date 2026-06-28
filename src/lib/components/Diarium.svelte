@@ -175,7 +175,7 @@
 		object-fit: contain;
 		border-radius: 6px;
 	}
-	@media (max-width: 480px) {
+	@media (max-width: 800px) {
 		.sidebar {
 			display: none;
 		}
