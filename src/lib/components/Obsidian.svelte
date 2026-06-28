@@ -24,7 +24,6 @@
 	<div class="sidebar {sidebarClass}">
 		<div class="heading"></div>
 		<div class="calendar-container">
-			<!-- Put calendar and stuff here -->
 			<Calendar
 				minDate="2023-10-28"
 				maxDate="2026-6-02"
