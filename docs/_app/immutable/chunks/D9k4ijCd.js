@@ -1,0 +1,1 @@
+import{a as o,f as a}from"./DhGPrsGG.js";import"./B_C4pAiN.js";/* empty css        */var r=a('<div class="svelte-f409yi"><h1 class="svelte-f409yi">Act II:<br/>The Waiting</h1></div>');function i(e){var t=r();o(e,t)}const f=Object.freeze(Object.defineProperty({__proto__:null,default:i},Symbol.toStringTag,{value:"Module"}));export{f as _,i as a};
