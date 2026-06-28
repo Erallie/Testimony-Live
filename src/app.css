@@ -539,4 +539,9 @@ div.obsidian {
 .discord-messages p {
 	margin: 0.3em 0;
 }
+@media (max-width: 480px) {
+	div.notes-container ul {
+		padding-inline-start: 20px;
+	}
+}
 /* #endregion */

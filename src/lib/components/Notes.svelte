@@ -50,4 +50,13 @@
 		margin: 20px 40px;
 		line-height: 1.75em;
 	}
+
+	@media (max-width: 480px) {
+		div.notes-background {
+			height: calc(100dvh - 56px);
+		}
+		div.children {
+			margin: 20px 0;
+		}
+	}
 </style>
