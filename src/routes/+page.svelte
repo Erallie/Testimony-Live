@@ -90,6 +90,7 @@
 		}
 		a {
 			font-size: 3rem;
+			height: unset;
 		}
 	}
 </style>
