@@ -1,6 +1,7 @@
 <script lang="ts">
 	import IPhone from '$lib/components/iPhone.svelte';
 	import IPhoneTexts from '$lib/components/IPhoneTexts.svelte';
+	import PaperSnippet from '$lib/components/PaperSnippet.svelte';
 	import SentText from '$lib/components/SentText.svelte';
 	import Timestamp from '$lib/components/Timestamp.svelte';
 </script>
@@ -19,6 +20,7 @@
 		</div>
 	</IPhoneTexts>
 </IPhone>
+<PaperSnippet><p class="caption">I never replied.</p></PaperSnippet>
 
 <style>
 	p.name {
