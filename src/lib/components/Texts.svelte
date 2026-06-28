@@ -61,7 +61,7 @@
 		);
 		height: 60px;
 		position: fixed;
-		bottom: 0;
+		bottom: 56px;
 		left: 0;
 		width: 100%;
 	}
