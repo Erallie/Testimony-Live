@@ -863,6 +863,7 @@
 
 	.day-button.is-disabled {
 		pointer-events: none;
+		background-color: rgba(239, 239, 239, 0.3);
 		color: #9ca3af;
 	}
 
