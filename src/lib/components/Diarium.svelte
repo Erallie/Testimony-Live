@@ -96,7 +96,7 @@
 	div.text {
 		background-color: #171717;
 		overflow-y: auto;
-		height: calc(100dvh - 88px);
+		height: calc(100dvh - 88px - 56px);
 		padding: 18px;
 		box-sizing: border-box;
 	}

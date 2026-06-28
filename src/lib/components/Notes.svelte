@@ -16,7 +16,7 @@
 <style>
 	div.notes-background {
 		width: 100%;
-		height: 100dvh;
+		height: calc(100dvh - 56px);
 		top: 0;
 		left: 0;
 		overflow-y: auto;
@@ -52,9 +52,6 @@
 	}
 
 	@media (max-width: 480px) {
-		div.notes-background {
-			height: calc(100dvh - 56px);
-		}
 		div.children {
 			margin: 20px 0;
 		}

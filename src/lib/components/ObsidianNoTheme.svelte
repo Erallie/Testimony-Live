@@ -39,7 +39,7 @@
 		flex-shrink: 0;
 		flex-grow: 0;
 		& > .calendar-container {
-			max-height: calc(100dvh - 40px - 20px - 2px);
+			max-height: calc(100dvh - 40px - 20px - 2px - 56px);
 			padding: 10px;
 			overflow-y: auto;
 		}
@@ -50,7 +50,7 @@
 		flex-direction: row;
 		width: 100%;
 		margin: 0px;
-		height: 100dvh;
+		height: calc(100dvh - 56px);
 		font-family:
 			ui-sans-serif,
 			-apple-system,
@@ -73,7 +73,7 @@
 	div.text {
 		background-color: rgb(30, 30, 30);
 		overflow-y: auto;
-		height: calc(100dvh - 121px);
+		height: calc(100dvh - 121px - 56px);
 		padding: 40px;
 
 		& h2 {

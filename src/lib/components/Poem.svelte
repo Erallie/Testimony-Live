@@ -31,7 +31,7 @@
 	}
 	div.container-for-scroll {
 		width: 100%;
-		height: 100dvh;
+		height: calc(100dvh - 56px);
 		overflow-y: auto;
 	}
 
@@ -64,10 +64,5 @@
 
 	div.poem-text {
 		margin: 20px 40px;
-	}
-	@media (max-width: 480px) {
-		div.container-for-scroll {
-			height: calc(100dvh - 56px);
-		}
 	}
 </style>

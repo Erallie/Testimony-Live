@@ -85,45 +85,9 @@
 </script>
 
 <div class="buttons-container">
-	<button class="desktop-button" on:click={goBack} aria-label="Back"
-		><svg
-			xmlns="http://www.w3.org/2000/svg"
-			width="50"
-			height="100"
-			viewBox="-10 -10 70 110"
-			role="img"
-		>
-			<polyline
-				points="50,0 0,50 50,100"
-				fill="none"
-				stroke="currentColor"
-				stroke-width="10"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-			/>
-		</svg></button
-	>
 	<div class="layout-content">
 		{@render children?.()}
 	</div>
-	<button class="desktop-button" on:click={goForward} aria-label="Next"
-		><svg
-			xmlns="http://www.w3.org/2000/svg"
-			width="50"
-			height="100"
-			viewBox="-10 -10 70 110"
-			role="img"
-		>
-			<polyline
-				points="0,0 50,50 0,100"
-				fill="none"
-				stroke="currentColor"
-				stroke-width="10"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-			/>
-		</svg></button
-	>
 	<div class="mobile-buttons-container">
 		<button on:click={goBack} aria-label="Back"
 			><svg
@@ -166,12 +130,13 @@
 <style>
 	.buttons-container {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		height: 100dvh;
 	}
 	div.layout-content {
 		flex: 1;
-		height: 100dvh;
+		flex-shrink: 1;
+		height: calc(100dvh - 56px);
 		overflow-y: auto;
 	}
 	button {
@@ -204,28 +169,13 @@
 		}
 	}
 	.mobile-buttons-container {
-		display: none;
+		display: flex;
+		flex: 0;
 		& > button {
 			flex: 1;
 			& > svg {
 				margin: auto;
 			}
-		}
-	}
-	@media (max-width: 480px) {
-		.buttons-container {
-			flex-direction: column;
-		}
-		div.layout-content {
-			flex-shrink: 1;
-			height: calc(100dvh - 56px);
-		}
-		button.desktop-button {
-			display: none;
-		}
-		.mobile-buttons-container {
-			display: flex;
-			flex: 0;
 		}
 	}
 </style>

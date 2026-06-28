@@ -20,14 +20,13 @@
 		width: 600px;
 		max-width: 90%;
 		padding: 30px 40px;
-		max-height: calc(100dvh - 140px);
+		max-height: calc(100dvh - 140px - 56px);
 		overflow-y: auto;
 		border-radius: 2px;
 	}
 	@media (max-width: 480px) {
 		section {
 			max-width: 80%;
-			max-height: calc(100dvh - 140px - 56px);
 		}
 	}
 </style>
