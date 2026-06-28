@@ -1,13 +1,10 @@
 <script lang="ts">
 	let { children } = $props();
-	import { page } from '$app/state';
 	import PrintedPage from '$lib/components/PrintedPage.svelte';
 	import { cap } from '$lib/stores';
 	import { getContext } from 'svelte';
 
 	const pageModules = import.meta.glob('/src/routes/**/[0-9][0-9][0-9]*/+page.svelte');
-
-	let pathname = $derived(page.url.pathname);
 
 	let pages = $derived(
 		Object.entries(pageModules)
