@@ -89,7 +89,7 @@
 			height: calc(100dvh - 225px);
 		}
 		a {
-			font-size: 3rem;
+		    font-size: clamp(2rem, 6vh, 3rem);
 			height: unset;
 		}
 	}
