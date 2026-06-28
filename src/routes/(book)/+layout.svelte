@@ -97,6 +97,10 @@
 			toggleMenu = fn;
 		}
 	});
+
+	function goHome() {
+		goto('/');
+	}
 </script>
 
 <div class="buttons-container">
@@ -130,6 +134,14 @@
 					<line x1="0" x2="100" y1="50" y2="50" />
 					<line x1="0" x2="100" y1="95" y2="95" />
 				</g>
+			</svg>
+		</button>
+		<button on:click={goHome} aria-label="Home">
+			<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+				<polygon
+					fill="currentColor"
+					points="20,100 20,50 0,50 50,0 100,50 80,50 80,100 57.5,100 57.5,80 42.5,80 42.5,100"
+				/>
 			</svg>
 		</button>
 		<button on:click={goForward} aria-label="Next"
