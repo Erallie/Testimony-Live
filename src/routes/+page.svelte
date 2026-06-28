@@ -59,7 +59,8 @@
 		transition: flex 0.3s;
 		font-family: 'EB Garamond', 'Times New Roman', serif;
 		font-weight: 500;
-		font-size: 3em;
+
+		font-size: clamp(4vw, 3rem, 8vw);
 		line-height: 1em;
 		color: white;
 		background-color: black;
@@ -76,6 +77,19 @@
 		}
 		&:hover {
 			flex: 1.5;
+		}
+	}
+
+	@media (max-width: 480px) {
+		div.heading {
+			height: 225px;
+		}
+		section {
+			flex-direction: column;
+			height: calc(100dvh - 225px);
+		}
+		a {
+			font-size: 3rem;
 		}
 	}
 </style>
