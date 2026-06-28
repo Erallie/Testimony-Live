@@ -1,0 +1,1 @@
+import{a as r,f as a}from"./Cg_ew4Tn.js";import"./C_wbRx2c.js";import{P as l}from"./ejEbywdr.js";var p=a('<h1 class="svelte-1qqvxpv">Act I:<br/>Hopeless</h1>');function s(e){l(e,{children:(t,_)=>{var o=p();r(t,o)},$$slots:{default:!0}})}const m=Object.freeze(Object.defineProperty({__proto__:null,default:s},Symbol.toStringTag,{value:"Module"}));export{m as _,s as a};

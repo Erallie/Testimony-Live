@@ -1,0 +1,2 @@
+import{a as r,f as a}from"./Cg_ew4Tn.js";import"./C_wbRx2c.js";import{ab as n}from"./CMmbQykW.js";import{P as i}from"./B7eMlUA4.js";var p=a(`<p>Five Minute Quick Write<br/> September 27, 2016</p> <p>The sun rises. It’s morning. I get out of bed, exhausted from the night, let out a big yawn, and
+		head my way toward another death.</p> <p>[End of five minutes]</p>`,1);function s(e){i(e,{children:(t,m)=>{var o=p();n(4),r(t,o)},$$slots:{default:!0}})}const _=Object.freeze(Object.defineProperty({__proto__:null,default:s},Symbol.toStringTag,{value:"Module"}));export{_,s as a};
