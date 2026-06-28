@@ -476,7 +476,8 @@ div.calendar-key {
 /* #endregion */
 
 /* #region Poetry/The Waiting */
-div.the-waiting {
+div.the-waiting,
+div.the-waiting-navigation {
 	font-family: 'EB Garamond', 'Times New Roman', serif;
 }
 
