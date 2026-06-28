@@ -3,6 +3,7 @@
 	import { getContext } from 'svelte';
 	import { allowedDates } from '$lib/stores';
 	import Calendar from './Calendar.svelte';
+	import ActIIINavigationInner from './ActIIINavigationInner.svelte';
 
 	let { date, datestamp, ratingValue, ratingTotal, children }: DiaryProps = $props();
 	let sidebarClass: string = $state('');
@@ -49,6 +50,10 @@
 			{@render children?.()}
 		</div>
 	</div>
+</div>
+
+<div class="navigation {sidebarClass}">
+	<ActIIINavigationInner />
 </div>
 
 <style>
@@ -105,15 +110,25 @@
 	div.container {
 		position: relative;
 	}
+
+	div.navigation {
+		display: none;
+	}
+	div.shown {
+		display: block;
+	}
 	@media (max-width: 800px) {
 		div.sidebar {
 			display: none;
 			width: 100%;
 		}
-		div.shown {
+		div.shown:not(.navigation) {
 			display: block;
 		}
 		div.hidden {
+			display: none;
+		}
+		div.navigation.shown {
 			display: none;
 		}
 	}

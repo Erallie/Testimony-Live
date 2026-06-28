@@ -26,6 +26,7 @@
 	}
 
 	import { allowedDates } from '$lib/stores';
+	import ActIIINavigationInner from './ActIIINavigationInner.svelte';
 	let sidebarClass: string = $state('');
 	let mainClass: string = $state('');
 
@@ -86,6 +87,10 @@
 			</div>
 		</div>
 	{/if}
+</div>
+
+<div class="navigation {sidebarClass}">
+	<ActIIINavigationInner />
 </div>
 
 <style>
@@ -184,15 +189,24 @@
 		object-fit: contain;
 		border-radius: 6px;
 	}
+	.navigation {
+		display: none;
+	}
+	.shown {
+		display: block;
+	}
 	@media (max-width: 800px) {
 		div.sidebar {
 			display: none;
 			width: 100%;
 		}
-		div.shown {
+		div.shown:not(.navigation) {
 			display: block;
 		}
 		div.hidden {
+			display: none;
+		}
+		.navigation.shown {
 			display: none;
 		}
 	}
