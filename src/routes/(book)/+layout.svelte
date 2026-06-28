@@ -178,9 +178,7 @@
 		overflow-y: auto;
 	}
 	button {
-		flex: 0;
-		flex-grow: 0;
-		flex-shrink: 0;
+		flex: 1;
 		width: 36px;
 		z-index: 100;
 
@@ -200,6 +198,7 @@
 			width: 20px;
 			height: auto;
 			color: white;
+			margin: auto;
 		}
 		&:hover {
 			cursor: pointer;
@@ -209,11 +208,5 @@
 	.mobile-buttons-container {
 		display: flex;
 		flex: 0;
-		& > button {
-			flex: 1;
-			& > svg {
-				margin: auto;
-			}
-		}
 	}
 </style>
