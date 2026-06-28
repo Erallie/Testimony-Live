@@ -5,28 +5,20 @@
 	import Calendar from './Calendar.svelte';
 	import ActIIINavigationInner from './ActIIINavigationInner.svelte';
 
-	let { date, datestamp, ratingValue, ratingTotal, children }: DiaryProps = $props();
-	let sidebarClass: string = $state('');
-	let mainClass: string = $state('');
+	type ToggleMenuContext = {
+		register: (fn: () => void) => void;
+	};
 
-	const { register } = getContext('toggle-menu');
+	let { date, datestamp, ratingValue, ratingTotal, children }: DiaryProps = $props();
+
+	let sidebarClass = $state<string>('');
+	let mainClass = $state<string>('');
+
+	const { register } = getContext<ToggleMenuContext>('toggle-menu');
+
 	register(() => {
-		switch (sidebarClass) {
-			case '':
-				sidebarClass = 'shown';
-				break;
-			case 'shown':
-				sidebarClass = '';
-				break;
-		}
-		switch (mainClass) {
-			case '':
-				mainClass = 'hidden';
-				break;
-			case 'hidden':
-				mainClass = '';
-				break;
-		}
+		sidebarClass = sidebarClass === '' ? 'shown' : '';
+		mainClass = mainClass === '' ? 'hidden' : '';
 	});
 </script>
 

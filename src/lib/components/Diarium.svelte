@@ -1,36 +1,51 @@
 <script lang="ts">
 	import type { DiaryProps } from '$lib/types';
 	import Calendar from './Calendar.svelte';
+	import ActIIINavigationInner from './ActIIINavigationInner.svelte';
 
 	import { getContext } from 'svelte';
+	import { allowedDates } from '$lib/stores';
 
-	let { date, datestamp, ratingValue, ratingTotal, images, children }: DiaryProps = $props();
+	// Props (typed explicitly)
+	let {
+		date,
+		datestamp,
+		ratingValue,
+		ratingTotal,
+		images,
+		children
+	}: DiaryProps = $props();
 
-	let openImage: string | null = $state(null);
+	let openImage: string | null = $state<string | null>(null);
 
-	function clickImage(src: string) {
+	function clickImage(src: string): void {
 		openImage = src;
 	}
 
-	function closeModal() {
+	function closeModal(): void {
 		openImage = null;
 	}
 
-	function handleKeydown(e: KeyboardEvent) {
+	function handleKeydown(e: KeyboardEvent): void {
 		if (e.key === 'Escape') {
 			closeModal();
 		}
 	}
-	function handleModalClick() {
+
+	function handleModalClick(): void {
 		closeModal();
 	}
 
-	import { allowedDates } from '$lib/stores';
-	import ActIIINavigationInner from './ActIIINavigationInner.svelte';
-	let sidebarClass: string = $state('');
-	let mainClass: string = $state('');
+	let sidebarClass: string = $state<string>('');
+	let mainClass: string = $state<string>('');
 
-	const { register } = getContext('toggle-menu');
+	// Typed context
+	type ToggleMenuContext = {
+		register: (fn: () => void) => void;
+	};
+
+	const { register } = getContext<ToggleMenuContext>('toggle-menu');
+
 	register(() => {
 		switch (sidebarClass) {
 			case '':
@@ -40,6 +55,7 @@
 				sidebarClass = '';
 				break;
 		}
+
 		switch (mainClass) {
 			case '':
 				mainClass = 'hidden';
