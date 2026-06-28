@@ -60,7 +60,9 @@
 		font-family: 'EB Garamond', 'Times New Roman', serif;
 		font-weight: 500;
 
-		font-size: clamp(4vw, 3rem, 8vw);
+		/* font-size: clamp(4vw, 3rem, 8vw); */
+
+		font-size: clamp(2.5rem, 4vw, 4rem);
 		line-height: 1em;
 		color: white;
 		background-color: black;
@@ -80,7 +82,7 @@
 		}
 	}
 
-	@media (max-width: 480px) {
+	@media (max-width: 560px) {
 		div.heading {
 			height: 225px;
 		}
