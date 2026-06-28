@@ -13,19 +13,21 @@
 <style>
 	div.container {
 		position: relative;
-		padding: 20px;
-		width: 675px;
+		padding: 1.6%;
+		width: min(675px, 90%);
+		aspect-ratio: 675 / 320;
 		margin: 10px auto;
 	}
 	div.background {
 		background-color: black;
 		position: absolute;
-		top: 20px;
-		left: 20px;
-		width: calc(100% - 40px);
-		height: calc(100% - 40px);
+		top: 5.8%;
+		left: 2.9%;
+		width: calc(100% - 5.8%);
+		height: calc(100% - 11.6%);
 		z-index: 0;
-		border-radius: 40px;
+		border-radius: 6%;
+		/* border: 1px solid red; */
 	}
 	img {
 		position: absolute;
@@ -36,5 +38,7 @@
 	}
 	.iphone-contents {
 		isolation: isolate;
+		width: 100%;
+		height: 100%;
 	}
 </style>
