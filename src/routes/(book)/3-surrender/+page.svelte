@@ -43,7 +43,7 @@
 		margin: 0.5rem 0 0;
 
 		font-family: 'Inter', sans-serif;
-		font-size: clamp(1.25rem, 8vw, 3rem);
+		font-size: clamp(1.25rem, 5vw, 3rem);
 		font-weight: 400;
 
 		text-shadow: 0 2px 10px rgba(0, 0, 0, 0.75);
