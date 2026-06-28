@@ -13,21 +13,20 @@
 <style>
 	div.container {
 		position: relative;
-		padding: 20px 1.6%;
+		padding: 1.6%;
 		width: min(675px, 90%);
-		/* aspect-ratio: 675 / 320; */
-		height: 320px;
+		aspect-ratio: 675 / 320;
 		margin: 10px auto;
 	}
 	div.background {
 		background-color: black;
 		position: absolute;
-		top: 20px;
+		top: 5.8%;
 		left: 2.9%;
 		width: calc(100% - 5.8%);
-		height: calc(100% - 40px);
-		border-radius: 6%;
+		height: calc(100% - 11.6%);
 		z-index: 0;
+		border-radius: 6%;
 		/* border: 1px solid red; */
 	}
 	img {
@@ -35,9 +34,7 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 100%;
 		pointer-events: none;
-		isolation: isolate;
 	}
 	.iphone-contents {
 		isolation: isolate;

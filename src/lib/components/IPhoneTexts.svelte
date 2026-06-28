@@ -16,9 +16,8 @@
 	div.texts {
 		background-color: white;
 		position: relative;
-		width: 100%;
-		height: 100%;
-		border-radius: 10%;
+		height: 312px;
+		border-radius: 40px;
 		overflow: hidden;
 	}
 	div.container {
