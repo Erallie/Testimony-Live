@@ -83,9 +83,16 @@
 				break;
 		}
 	}
-	let toggleMenu = $state(() => {});
 
-	setContext('toggle-menu', {
+	type ToggleMenuFn = () => void;
+
+	type ToggleMenuContext = {
+		register: (fn: ToggleMenuFn) => void;
+	};
+
+	let toggleMenu: ToggleMenuFn = $state(() => {});
+
+	setContext<ToggleMenuContext>('toggle-menu', {
 		register(fn) {
 			toggleMenu = fn;
 		}

@@ -293,7 +293,8 @@ h2 {
 	line-height: 1em;
 }
 /* #region Hopeless */
-div.hopeless {
+div.hopeless,
+div.hopeless-navigation {
 	font-family: 'Cardo', 'Times New Roman', serif;
 }
 div.paper-snippet p.caption,
