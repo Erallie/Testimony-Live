@@ -24,7 +24,7 @@
 	}
 	div.notes-container {
 		width: 800px;
-		max-width: 90%;
+		max-width: calc(90% - 20px);
 		margin: 20px auto;
 		background-color: #5b5fa8;
 		color: white;
