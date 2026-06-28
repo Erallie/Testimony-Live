@@ -8,6 +8,8 @@
 	import weekOfYear from 'dayjs/plugin/weekOfYear';
 	import { onMount } from 'svelte';
 
+	import { cap } from '$lib/stores';
+
 	import { page } from '$app/state';
 
 	// dayjs.extend(isToday);
@@ -197,9 +199,8 @@
 				// remove leading date prefix (optional but matches your structure)
 				const titleSlug = fileName.replace(/^(?:\d+-)*/, '');
 				const splitTitle = titleSlug.split('-');
-				const cap = (s) => (s ? s[0].toUpperCase() + s.slice(1) : '');
 
-				const title = splitTitle.map((word) => cap(word) ?? '').join(' ');
+				const title = splitTitle.map((word) => $cap(word) ?? '').join(' ');
 				console.log('title', title);
 				console.log('titleSlug', titleSlug);
 				const url = '/' + splitPath.at(-3) + '/' + splitPath.at(-2);

@@ -1,5 +1,9 @@
 import { writable } from 'svelte/store';
 
+type CapFn = (s: string) => string;
+
+export const cap = writable<CapFn>((s) => (s ? s[0].toUpperCase() + s.slice(1) : ''));
+
 export const allowedDates: string[] = [
 	'2023-10-28',
 	'2023-10-31',
