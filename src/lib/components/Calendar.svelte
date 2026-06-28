@@ -855,6 +855,7 @@
 			border 0.1s ease,
 			background 0.1s ease;
 		position: relative;
+        color: black;
 	}
 
 	.day-button:hover {
@@ -934,6 +935,7 @@
 		border-radius: 12px;
 		padding: 10px;
 		cursor: pointer;
+        color: black;
 	}
 	h2.previews-heading {
 		text-align: left;
