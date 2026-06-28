@@ -23,7 +23,7 @@
 		aspect-ratio: 1/1;
 		overflow-y: auto;
 		width: 300px;
-		max-width: 90%;
+		max-width: calc(90% - 60px);
 		padding: 30px;
 		margin: auto;
 		display: flex;

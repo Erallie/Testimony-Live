@@ -110,4 +110,15 @@
 	div.shown {
 		display: block;
 	}
+	@media (max-width: 480px), (max-height: 480px) {
+		div.hopeless,
+		div.hopeless-navigation {
+			padding: 20px 0;
+			height: calc(100dvh - 40px - 56px);
+
+			& ol {
+				padding-inline-start: 20px;
+			}
+		}
+	}
 </style>

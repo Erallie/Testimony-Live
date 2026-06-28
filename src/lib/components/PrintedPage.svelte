@@ -18,15 +18,18 @@
 		background-size: cover;
 		margin: auto;
 		width: 600px;
-		max-width: 90%;
+		max-width: calc(90% - 80px);
 		padding: 30px 40px;
 		max-height: calc(100dvh - 140px - 56px);
 		overflow-y: auto;
 		border-radius: 2px;
 	}
-	@media (max-width: 480px) {
+	@media (max-width: 480px), (max-height: 480px) {
 		section {
-			max-width: 80%;
+			max-width: calc(90% - 40px);
+			padding: 15px 20px;
+
+			max-height: calc(100dvh - 70px - 56px);
 		}
 	}
 </style>

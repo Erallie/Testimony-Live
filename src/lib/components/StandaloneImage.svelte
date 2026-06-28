@@ -16,7 +16,7 @@
 	img {
 		display: block;
 		margin: 10px auto;
-		max-width: 80%;
+		max-width: calc(90% - 20px);
 		border-radius: 2px;
 	}
 </style>

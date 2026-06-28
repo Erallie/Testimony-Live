@@ -10,9 +10,9 @@
 	});
 </script>
 
-<div class="full-container" style={`transform: rotateZ(${randomRotation}deg)`}>
-	<img src={source} {alt} class="actual-image" style={`width: ${width}px`} />
-	<div class="polaroid-caption" style={`width: ${width}px`}>
+<div class="full-container" style={`transform: rotateZ(${randomRotation}deg); --width: ${width}px`}>
+	<img src={source} {alt} class="actual-image" />
+	<div class="polaroid-caption">
 		{@render children?.()}
 	</div>
 </div>
@@ -22,7 +22,8 @@
 		position: relative;
 		display: block;
 		margin: 20px auto;
-		width: fit-content;
+		width: var(--width);
+		max-width: calc(90% - 40px);
 		background-image: url('/components/polaroid-backdrop.webp');
 		background-size: contain;
 		padding: 20px;

@@ -26,10 +26,17 @@
 			padding-top: calc(1.8em + 3px);
 			height: 100%;
 			overflow-y: auto;
+			aspect-ratio: 4/6;
+
 			isolation: isolate;
 		}
 		font-family: Caveat, 'Playpen Sans Hebrew', cursive;
 		font-size: 1.4em;
 		line-height: 0.9em;
+	}
+	@media (max-width: 480px) {
+		div.diary > div {
+			padding: 20px;
+		}
 	}
 </style>
