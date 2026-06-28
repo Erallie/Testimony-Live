@@ -4,7 +4,9 @@
 
 <div class="container">
 	<div class="background"></div>
-	{@render children?.()}
+	<div class="iphone-contents">
+		{@render children?.()}
+	</div>
 	<img src="/components/iphone-16.webp" alt="iPhone" />
 </div>
 
@@ -22,7 +24,7 @@
 		left: 20px;
 		width: calc(100% - 40px);
 		height: calc(100% - 40px);
-		z-index: -1;
+		z-index: 0;
 		border-radius: 40px;
 	}
 	img {
@@ -31,5 +33,8 @@
 		left: 0;
 		width: 100%;
 		pointer-events: none;
+	}
+	.iphone-contents {
+		isolation: isolate;
 	}
 </style>
