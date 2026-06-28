@@ -49,6 +49,17 @@
 				break;
 		}
 	});
+
+	function toggleMenu() {
+		switch (navigationClass) {
+			case '':
+				navigationClass = 'shown';
+				break;
+			case 'shown':
+				navigationClass = '';
+				break;
+		}
+	}
 </script>
 
 <div class="hopeless">
@@ -60,7 +71,7 @@
 		<ol>
 			{#each pages as page}
 				<li>
-					<a href={page.href}>{page.title}</a>
+					<a href={page.href} on:click={toggleMenu}>{page.title}</a>
 				</li>
 			{/each}
 		</ol>
