@@ -2,9 +2,13 @@
 	import type { DiaryProps } from '$lib/types';
 	import Calendar from './Calendar.svelte';
 
+	import { getContext } from 'svelte';
+
 	let { date, datestamp, ratingValue, ratingTotal, images, children }: DiaryProps = $props();
 
 	let openImage: string | null = $state(null);
+
+	let sidebarClass: string = $state('');
 
 	function clickImage(src: string) {
 		openImage = src;
@@ -24,10 +28,22 @@
 	}
 
 	import { allowedDates } from '$lib/stores';
+
+	const { register } = getContext('toggle-menu');
+	register(() => {
+		switch (sidebarClass) {
+			case '':
+				sidebarClass = 'shown';
+				break;
+			case 'shown':
+				sidebarClass = '';
+				break;
+		}
+	});
 </script>
 
 <div class="diarium">
-	<div class="sidebar">
+	<div class="sidebar {sidebarClass}">
 		<Calendar
 			minDate="2023-10-28"
 			maxDate="2026-6-02"
@@ -158,5 +174,13 @@
 		height: auto;
 		object-fit: contain;
 		border-radius: 6px;
+	}
+	@media (max-width: 480px) {
+		.sidebar {
+			display: none;
+		}
+		.shown {
+			display: block;
+		}
 	}
 </style>

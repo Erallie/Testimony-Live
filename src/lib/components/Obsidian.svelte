@@ -1,14 +1,27 @@
 <script lang="ts">
 	import type { DiaryProps } from '$lib/types';
-
-	let { date, datestamp, ratingValue, ratingTotal, children }: DiaryProps = $props();
-
+	import { getContext } from 'svelte';
 	import { allowedDates } from '$lib/stores';
 	import Calendar from './Calendar.svelte';
+
+	let { date, datestamp, ratingValue, ratingTotal, children }: DiaryProps = $props();
+	let sidebarClass: string = $state('');
+
+	const { register } = getContext('toggle-menu');
+	register(() => {
+		switch (sidebarClass) {
+			case '':
+				sidebarClass = 'shown';
+				break;
+			case 'shown':
+				sidebarClass = '';
+				break;
+		}
+	});
 </script>
 
 <div class="obsidian">
-	<div class="sidebar">
+	<div class="sidebar {sidebarClass}">
 		<div class="heading"></div>
 		<div class="calendar-container">
 			<!-- Put calendar and stuff here -->
@@ -74,5 +87,13 @@
 	}
 	div.container {
 		position: relative;
+	}
+	@media (max-width: 480px) {
+		.sidebar {
+			display: none;
+		}
+		.shown {
+			display: block;
+		}
 	}
 </style>

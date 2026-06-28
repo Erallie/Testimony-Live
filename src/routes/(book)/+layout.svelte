@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
+	import { setContext } from 'svelte';
 
 	let { children } = $props();
 
@@ -82,6 +83,13 @@
 				break;
 		}
 	}
+	let toggleMenu = $state(() => {});
+
+	setContext('toggle-menu', {
+		register(fn) {
+			toggleMenu = fn;
+		}
+	});
 </script>
 
 <div class="buttons-container">
@@ -106,7 +114,18 @@
 					stroke-linejoin="round"
 				/>
 			</svg></button
-		><button on:click={goForward} aria-label="Next"
+		>
+
+		<button on:click={toggleMenu} aria-label="Menu">
+			<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+				<g stroke="currentColor" stroke-width="10">
+					<line x1="0" x2="100" y1="5" y2="5" />
+					<line x1="0" x2="100" y1="50" y2="50" />
+					<line x1="0" x2="100" y1="95" y2="95" />
+				</g>
+			</svg>
+		</button>
+		<button on:click={goForward} aria-label="Next"
 			><svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="50"
