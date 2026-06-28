@@ -2,30 +2,25 @@
 	import { getContext } from 'svelte';
 	import ActIIINavigationInner from './ActIIINavigationInner.svelte';
 
-	let navigationClass: string = $state('');
+	type ToggleMenuContext = {
+		register: (fn: () => void) => void;
+	};
 
-	const { register } = getContext('toggle-menu');
-	register(() => {
-		switch (navigationClass) {
-			case '':
-				navigationClass = 'shown';
-				break;
-			case 'shown':
-				navigationClass = '';
-				break;
-		}
-	});
+	let navigationClass = $state('');
 
-	function toggleMenu() {
-		switch (navigationClass) {
-			case '':
-				navigationClass = 'shown';
-				break;
-			case 'shown':
-				navigationClass = '';
-				break;
-		}
+	const context = getContext('toggle-menu') as ToggleMenuContext | undefined;
+
+	if (!context) {
+		throw new Error('toggle-menu context is missing');
 	}
+
+	const { register } = context;
+
+	const toggle = (): void => {
+		navigationClass = navigationClass === 'shown' ? '' : 'shown';
+	};
+
+	register(toggle);
 </script>
 
 <div class="actiii-navigation {navigationClass}">

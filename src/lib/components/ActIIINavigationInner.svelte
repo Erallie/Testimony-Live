@@ -2,44 +2,57 @@
 	import { cap } from '$lib/stores';
 	import dayjs from 'dayjs';
 	import advancedFormat from 'dayjs/plugin/advancedFormat';
+
 	dayjs.extend(advancedFormat);
 
-	const pageModules = import.meta.glob(
-		'/src/routes/**/202[0-9]-[0-9][0-9]-[0-9][0-9]*/+page.svelte'
-	);
+	type PageModule = {
+		default: unknown;
+	};
 
-	let pages = $derived(
+	type PageModuleMap = Record<string, () => Promise<PageModule>>;
+
+	const pageModules = import.meta.glob<PageModule>(
+		'/src/routes/**/202[0-9]-[0-9][0-9]-[0-9][0-9]*/+page.svelte'
+	) as PageModuleMap;
+
+	type Page = {
+		title: string;
+		href: string;
+		date: string;
+	};
+
+	let pages: Page[] = $derived(
 		Object.entries(pageModules)
 			.filter(([path]) => path.includes('/3-surrender/'))
 			.map(([path]) => {
 				const parts = path.split('/');
-				const title = parts[parts.length - 2]
+				const folder = parts[parts.length - 2];
+
+				const title = folder
 					.replace(/^(?:\d+-)*/, '')
 					.split('-')
 					.map((word) => $cap(word) ?? '')
 					.join(' ');
 
-				const date = dayjs(parts[parts.length - 2].slice(0, 10), 'YYYY-MM-DD', true).format(
-					'MMMM Do, YYYY'
-				);
-				// convert file system path -> route path
-				// "/src/routes/(book)/1-hopeless/001/+page.svelte"
-				// becomes "/1-hopeless/001"
+				const date = dayjs(
+					folder.slice(0, 10),
+					'YYYY-MM-DD',
+					true
+				).format('MMMM Do, YYYY');
+
 				const routeIndex = path.indexOf('/3-surrender/');
 				const href = path.slice(routeIndex).replace('/+page.svelte', '');
 
-				return {
-					title,
-					href,
-					date
-				};
+				return { title, href, date };
 			})
-			.sort((a, b) => getPrefix(a.href).localeCompare(getPrefix(b.href)))
+			.sort((a, b) =>
+				getPrefix(a.href).localeCompare(getPrefix(b.href))
+			)
 	);
 
 	const PREFIX_REGEX = /^\d+(?:-\d+)*/;
 
-	function getPrefix(p: string) {
+	function getPrefix(p: string): string {
 		return p.match(PREFIX_REGEX)?.[0] ?? '';
 	}
 </script>
@@ -47,7 +60,7 @@
 <div class="surrender-navigation">
 	<div class="start-menu">
 		{#each pages as page}
-			<a class="buttons" href={page.href} on:click={toggleMenu}>
+			<a class="buttons" href={page.href}>
 				<div>
 					<div class="title">{page.title}</div>
 					<div class="date">{page.date}</div>

@@ -5,28 +5,42 @@
 	import Calendar from './Calendar.svelte';
 	import ActIIINavigationInner from './ActIIINavigationInner.svelte';
 
+	type ToggleMenuContext = {
+		register: (fn: () => void) => void;
+	};
+
 	let { date, datestamp, ratingValue, ratingTotal, children }: DiaryProps = $props();
+
 	let sidebarClass: string = $state('');
 	let mainClass: string = $state('');
 
-	const { register } = getContext('toggle-menu');
+	const { register } = getContext<ToggleMenuContext>('toggle-menu');
+
 	register(() => {
-		switch (sidebarClass) {
-			case '':
-				sidebarClass = 'shown';
-				break;
-			case 'shown':
-				sidebarClass = '';
-				break;
-		}
-		switch (mainClass) {
-			case '':
-				mainClass = 'hidden';
-				break;
-			case 'hidden':
-				mainClass = '';
-				break;
-		}
+		const toggleSidebar = () => {
+			switch (sidebarClass) {
+				case '':
+					sidebarClass = 'shown';
+					break;
+				case 'shown':
+					sidebarClass = '';
+					break;
+			}
+		};
+
+		const toggleMain = () => {
+			switch (mainClass) {
+				case '':
+					mainClass = 'hidden';
+					break;
+				case 'hidden':
+					mainClass = '';
+					break;
+			}
+		};
+
+		toggleSidebar();
+		toggleMain();
 	});
 </script>
 
@@ -100,7 +114,7 @@
 	div.text {
 		background-color: rgb(30, 30, 30);
 		overflow-y: auto;
-		height: calc(100dvh - 121px - 56px);
+		height: calc(100dvh - 120.5px - 56px);
 		padding: 40px;
 
 		& h2 {
@@ -120,7 +134,7 @@
 	@media (max-width: 800px) {
 		div.sidebar {
 			display: none;
-			width: 100%;
+			width: calc(100% - 1px);
 		}
 		div.shown:not(.navigation) {
 			display: block;
