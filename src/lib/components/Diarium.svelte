@@ -63,7 +63,7 @@
 			{#if images}
 				<div>
 					{#each images as image}
-						<button on:click={() => clickImage(image)}>
+						<button class="image-button" on:click={() => clickImage(image)}>
 							<img src={image} alt={image.split('/').pop()} />
 						</button>
 					{/each}
@@ -124,7 +124,7 @@
 		margin: 0;
 		/* box-sizing: border-box; */
 	}
-	button {
+	button.image-button {
 		aspect-ratio: 1/1;
 		width: 100px;
 		border: none;
