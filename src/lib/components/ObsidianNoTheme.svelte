@@ -119,6 +119,7 @@
 
 		& h2 {
 			text-align: left;
+			line-height: 31px;
 		}
 	}
 	div.container {
