@@ -62,7 +62,7 @@
 
 		/* font-size: clamp(4vw, 3rem, 8vw); */
 
-		font-size: clamp(2.5rem, 4vw, 4rem);
+		font-size: clamp(2.5rem, 4vw, 3.5rem);
 		line-height: 1em;
 		color: white;
 		background-color: black;
