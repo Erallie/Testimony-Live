@@ -1,4 +1,5 @@
 <script lang="ts">
+	import ActIIINavigation from '$lib/components/ActIIINavigation.svelte';
 	import ReceivedText from '$lib/components/ReceivedText.svelte';
 	import SentText from '$lib/components/SentText.svelte';
 	import Texts from '$lib/components/Texts.svelte';
@@ -79,3 +80,5 @@
 		</p>
 	</SentText>
 </Texts>
+
+<ActIIINavigation />

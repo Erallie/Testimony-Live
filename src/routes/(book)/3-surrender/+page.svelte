@@ -1,4 +1,6 @@
-<script lang="ts"></script>
+<script lang="ts">
+	import ActIIINavigation from '$lib/components/ActIIINavigation.svelte';
+</script>
 
 <div class="background">
 	<div class="content">
@@ -6,6 +8,7 @@
 		<h2>Surrender</h2>
 	</div>
 </div>
+<ActIIINavigation />
 
 <style>
 	.background {

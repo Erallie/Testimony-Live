@@ -1,4 +1,5 @@
 <script lang="ts">
+	import ActIIINavigation from '$lib/components/ActIIINavigation.svelte';
 	import DiscordConvo from '$lib/components/DiscordConvo.svelte';
 	import DiscordDayDivider from '$lib/components/DiscordDayDivider.svelte';
 	import DiscordMessage from '$lib/components/DiscordMessage.svelte';
@@ -73,8 +74,7 @@
 			<br />
 
 			<br />
-			I can mentally believe someone isn't attacking me while I emotionally feel they are. There's a
-			disconnect
+			I can mentally believe someone isn't attacking me while I emotionally feel they are. There's a disconnect
 		</p>
 	</DiscordMessage>
 	<DiscordMessage
@@ -246,10 +246,10 @@
 			I focused on the word event, because I don't know what they mean to you. Though rest assured,
 			I do suspect that the why is a bit deeper than most would guess.
 			<br />
-			Though now I guess, now that this has happened possibly a few times; seeing that you mentioned
-			this year alone you had to recall a lot of material over and over. My question to better understand
-			is what are you remembering that overlaps with your other statements. Tying this back to the lack
-			of inner love.
+			Though now I guess, now that this has happened possibly a few times; seeing that you mentioned this
+			year alone you had to recall a lot of material over and over. My question to better understand is
+			what are you remembering that overlaps with your other statements. Tying this back to the lack of
+			inner love.
 			<br />
 			<br />Were these events specifically tied to friends for example?
 		</p>
@@ -432,14 +432,14 @@
 			because the changes didn't actually emotionally deal with the trauma.<br />
 			<br />
 			I was initially trying to say all this in order to say that how I emotionally feel at any moment
-			may not reflect the feelings that may be buried underneath, but it took all saying all this to
-			make sure this statement was still accurate.
+			may not reflect the feelings that may be buried underneath, but it took all saying all this to make
+			sure this statement was still accurate.
 		</p>
 		<p>And I decided to send it anyway</p>
 		<p>Now I will try to answer your question</p>
 		<p>
-			I did not feel loved. I do not remember whether in that moment, I mentally <em>believed</em> I
-			was loved by those people involved.
+			I did not feel loved. I do not remember whether in that moment, I mentally <em>believed</em> I was
+			loved by those people involved.
 		</p>
 		<p>
 			But the first thing that happened last year, I think my friend loved me or at least cared for
@@ -625,3 +625,5 @@
 		</p>
 	</DiscordMessage>
 </DiscordConvo>
+
+<ActIIINavigation />

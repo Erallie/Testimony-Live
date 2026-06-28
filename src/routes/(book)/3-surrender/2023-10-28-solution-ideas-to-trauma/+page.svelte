@@ -1,4 +1,5 @@
 <script lang="ts">
+	import ActIIINavigation from '$lib/components/ActIIINavigation.svelte';
 	import Notes from '$lib/components/Notes.svelte';
 </script>
 
@@ -133,3 +134,5 @@
 		</li>
 	</ul>
 </Notes>
+
+<ActIIINavigation />

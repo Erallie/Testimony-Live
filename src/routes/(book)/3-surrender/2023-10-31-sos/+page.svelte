@@ -1,4 +1,5 @@
 <script lang="ts">
+	import ActIIINavigation from '$lib/components/ActIIINavigation.svelte';
 	import SentText from '$lib/components/SentText.svelte';
 	import Texts from '$lib/components/Texts.svelte';
 	import Timestamp from '$lib/components/Timestamp.svelte';
@@ -65,3 +66,5 @@
 		</p>
 	</SentText>
 </Texts>
+
+<ActIIINavigation />
