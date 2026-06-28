@@ -102,7 +102,7 @@
 		flex-grow: 0;
 		padding: 10px;
 
-		max-height: 100dvh;
+		max-height: calc(100dvh - 56px);
 		overflow-y: auto;
 	}
 	div.bar {
