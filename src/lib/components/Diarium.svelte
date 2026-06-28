@@ -8,8 +8,6 @@
 
 	let openImage: string | null = $state(null);
 
-	let sidebarClass: string = $state('');
-
 	function clickImage(src: string) {
 		openImage = src;
 	}
@@ -28,6 +26,8 @@
 	}
 
 	import { allowedDates } from '$lib/stores';
+	let sidebarClass: string = $state('');
+	let mainClass: string = $state('');
 
 	const { register } = getContext('toggle-menu');
 	register(() => {
@@ -37,6 +37,14 @@
 				break;
 			case 'shown':
 				sidebarClass = '';
+				break;
+		}
+		switch (mainClass) {
+			case '':
+				mainClass = 'hidden';
+				break;
+			case 'hidden':
+				mainClass = '';
 				break;
 		}
 	});
@@ -52,7 +60,7 @@
 			allowSelect={true}
 		/>
 	</div>
-	<div>
+	<div class={mainClass}>
 		<div class="date">
 			<p>{date}</p>
 		</div>
@@ -104,6 +112,7 @@
 
 		max-height: calc(100dvh - 56px);
 		overflow-y: auto;
+		height: calc(100dvh - 56px);
 	}
 	div.bar {
 		background-color: #504ea0;
@@ -176,11 +185,15 @@
 		border-radius: 6px;
 	}
 	@media (max-width: 800px) {
-		.sidebar {
+		div.sidebar {
 			display: none;
+			width: 100%;
 		}
-		.shown {
+		div.shown {
 			display: block;
+		}
+		div.hidden {
+			display: none;
 		}
 	}
 </style>

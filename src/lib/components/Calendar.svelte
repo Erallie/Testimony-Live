@@ -937,4 +937,8 @@
 	h2.previews-heading {
 		text-align: left;
 	}
+	.previews {
+		max-width: 400px;
+		margin: auto;
+	}
 </style>

@@ -6,6 +6,7 @@
 
 	let { date, datestamp, ratingValue, ratingTotal, children }: DiaryProps = $props();
 	let sidebarClass: string = $state('');
+	let mainClass: string = $state('');
 
 	const { register } = getContext('toggle-menu');
 	register(() => {
@@ -15,6 +16,14 @@
 				break;
 			case 'shown':
 				sidebarClass = '';
+				break;
+		}
+		switch (mainClass) {
+			case '':
+				mainClass = 'hidden';
+				break;
+			case 'hidden':
+				mainClass = '';
 				break;
 		}
 	});
@@ -33,7 +42,7 @@
 			/>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container {mainClass}">
 		<div class="heading"></div>
 		<div class="text">
 			<h2>{date}</h2>
@@ -88,11 +97,15 @@
 		position: relative;
 	}
 	@media (max-width: 800px) {
-		.sidebar {
+		div.sidebar {
 			display: none;
+			width: 100%;
 		}
-		.shown {
+		div.shown {
 			display: block;
+		}
+		div.hidden {
+			display: none;
 		}
 	}
 </style>
