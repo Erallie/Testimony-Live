@@ -25,7 +25,7 @@
 	<p>There's a lot to write about that I don't really want to put the effort in to write about.</p>
 	<p>I haven't read the Bible for the last three days.</p>
 	<p>
-		Zoe said they'd just finish <em>Dead on the Vine</em> by themselves. (I <em>did</em> ruin their birthday
+		Sara said they'd just finish <em>Dead on the Vine</em> by themselves. (I <em>did</em> ruin their birthday
 		part 2 for them.)
 	</p>
 	<p>At least I got the rating done yesterday. The rating is nice.</p>

@@ -47,11 +47,11 @@
 	</p>
 	<p>
 		When I was out in the living room, Dad said we could go out to eat dinner, and I said I would
-		talk to Zoe.
+		talk to Sara.
 	</p>
-	<p>I came back to my room, and I said I would talk to Zoe before joining Noble.</p>
+	<p>I came back to my room, and I said I would talk to Sara before joining Noble.</p>
 	<p>
-		But as I walked to Zoe's room, I recalled what happened, and it seemed in my memory like it was
+		But as I walked to Sara's room, I recalled what happened, and it seemed in my memory like it was
 		God who told me to join Noble.
 	</p>
 	<p>
