@@ -76,7 +76,7 @@
 	</p>
 	<p>
 		Father, I ask that if I am wrong to see things in the way of there is no <em>is</em>, correct
-		me. This is Your work in me, and not Derek'. Because I don't think I'm getting it. And if I am
+		me. This is Your work in me, and not Derek's. Because I don't think I'm getting it. And if I am
 		wrong to think that I should try to change my thinking, also correct me. Because I'm probably
 		going to keep trying to change my thinking until then.
 	</p>
