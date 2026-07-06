@@ -63,7 +63,7 @@
 	<p>
 		I also remembered more of what God taught me through reading these journal entries. I need love
 		within myself to love myself and others. And now that God is here, I <em>can</em>. I didn't get
-		to it yet, but I learned that from Derek. Because God provides the love that I need.
+		to it yet, but I learned that from Hanns. Because God provides the love that I need.
 	</p>
 	<p>
 		So whatever God does next, I trust Him to continue His work in me. And it will be for His

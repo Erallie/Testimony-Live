@@ -6,10 +6,10 @@
 
 <Obsidian date="Monday, September 29th at 1:36 PM" datestamp="2025-09-29">
 	<p>
-		Hi. Apparently, Derek wanted to talk in a call to resolve things before going to rehearsal today
+		Hi. Apparently, Hanns wanted to talk in a call to resolve things before going to rehearsal today
 		for the flash mob.
 	</p>
-	<p>Let me send the apology I sent to Derek:</p>
+	<p>Let me send the apology I sent to Hanns:</p>
 	<p><strong>Erallie</strong> 12:39 PM</p>
 	<ObsidianQuote>
 		<p>
@@ -56,32 +56,32 @@
 		that that was <em>only</em> in effect.
 	</p>
 	<p>
-		After that happened, Derek left quickly, and I was thinking over it, and I was trying to pray to
-		God to correct me. Because Derek <em>did</em> say that we are judged for our actions. It's just
+		After that happened, Hanns left quickly, and I was thinking over it, and I was trying to pray to
+		God to correct me. Because Hanns <em>did</em> say that we are judged for our actions. It's just
 		difficult to piece together in situations of conflicting intention vs. perception what is the
 		actual <em>is</em>. Normally, I'd probably think that neither of them were in the wrong, and
 		neither will be judged for it.
 	</p>
 	<p>
-		I guess I'm also worried that I may be wrong to try to believe that in this situation, Derek is
+		I guess I'm also worried that I may be wrong to try to believe that in this situation, Hanns is
 		right about me <em>doing</em> it, and not only him <em>perceiving</em> it. Because I
 		<em>did</em>
-		ask God to correct him on that. After I said that I <em>did</em> push him to do it, Derek said that
+		ask God to correct him on that. After I said that I <em>did</em> push him to do it, Hanns said that
 		helps him feel a lot better. So it's definitely the case that he needed validation on that.
 	</p>
 	<p>
 		I think I should have continued talking with him about the thing. When I try to tell myself that
-		I <em>did</em> push him, I feel like I'm giving into emotional manipulation. But I trust that Derek
+		I <em>did</em> push him, I feel like I'm giving into emotional manipulation. But I trust that Hanns
 		isn't doing that. And I don't think he'd have manipulative tendencies either.
 	</p>
 	<p>
 		Father, I ask that if I am wrong to see things in the way of there is no <em>is</em>, correct
-		me. This is Your work in me, and not Derek's. Because I don't think I'm getting it. And if I am
+		me. This is Your work in me, and not Hanns'. Because I don't think I'm getting it. And if I am
 		wrong to think that I should try to change my thinking, also correct me. Because I'm probably
 		going to keep trying to change my thinking until then.
 	</p>
 	<p>
-		I also ask that if Derek is wrong to say I <em>did</em> do the thing, and I am right to say
+		I also ask that if Hanns is wrong to say I <em>did</em> do the thing, and I am right to say
 		there is no <em>is</em>, you correct him in due time. But that is again, Your work in him, and
 		not mine, and it affects me less. I ask that you correct me sooner. Like, very soon. Like maybe
 		tonight or tomorrow or something like that. Because it's going to be difficult for me otherwise,
@@ -89,7 +89,7 @@
 	</p>
 	<p>
 		And Father, I also ask that we have a good rehearsal today, and don't let any confusion on my
-		end get in the way of my performance or interactions with Derek or ender or anyone else. And let
+		end get in the way of my performance or interactions with Hanns or ender or anyone else. And let
 		us get done what we need to get done. And let it be a good rehearsal. Thank you. I pray this in
 		Yeshua's name, Amen.
 	</p>

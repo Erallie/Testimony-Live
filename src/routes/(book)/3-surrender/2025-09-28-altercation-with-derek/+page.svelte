@@ -7,18 +7,18 @@
 	<p>I am now waiting to be let into Sara's show.</p>
 	<p>
 		I missed the bulk of my performance at Improv Knight because I got into an altercation with
-		Derek.
+		Hanns.
 	</p>
 	<p>
-		I knew that I would suck at the games I got, so I thought I'd ask both Derek and Knight Ryder if
-		I could switch with Derek for some games.
+		I knew that I would suck at the games I got, so I thought I'd ask both Hanns and Knight Ryder if
+		I could switch with Hanns for some games.
 	</p>
 	<p>
-		I want to be brief. Derek started acting like he was accusing me of conspiring behind Knight
+		I want to be brief. Hanns started acting like he was accusing me of conspiring behind Knight
 		Ryder's back and was accusing me of pushing him into giving him an answer.
 	</p>
 	<p>
-		Obviously, I was just trying to explain why I went to Derek first. And he was like, “I'm gonna
+		Obviously, I was just trying to explain why I went to Hanns first. And he was like, “I'm gonna
 		be honest, you're making me very uncomfortable” and “I'm gonna ask you to stop this behavior.”
 		And I said I am not intending to push him, and he said that may not be my intent but it is what
 		I am doing.
@@ -39,7 +39,7 @@
 	<p>People aren't interacting with us anymore. So I will continue what I was writing.</p>
 	<p>
 		Knight was in the gaming voice chat this morning, so I joined him. I ended up telling him that I
-		had an altercation with Derek, and that was why I wasn't able to continue going. Knight
+		had an altercation with Hanns, and that was why I wasn't able to continue going. Knight
 		apologized, and I said that he didn't have anything to apologize for, and he said he at least
 		should have known.
 	</p>
