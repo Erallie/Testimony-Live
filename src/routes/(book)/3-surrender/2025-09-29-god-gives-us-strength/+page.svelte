@@ -71,8 +71,8 @@
 	</p>
 	<p>
 		I think I should have continued talking with him about the thing. When I try to tell myself that
-		I <em>did</em> push him, I feel like I'm giving into emotional manipulation. But I trust that Hanns
-		isn't doing that. And I don't think he'd have manipulative tendencies either.
+		I <em>did</em> push him, I feel like I'm giving into emotional manipulation. But not from Hanns.
+		It felt more like I was manipulating <em>myself</em>.
 	</p>
 	<p>
 		Father, I ask that if I am wrong to see things in the way of there is no <em>is</em>, correct
