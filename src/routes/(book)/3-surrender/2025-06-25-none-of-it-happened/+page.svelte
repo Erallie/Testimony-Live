@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Obsidian from '$lib/components/Obsidian.svelte';
-	import ObsidianInlineCode from '$lib/components/ObsidianInlineCode.svelte';
 </script>
 
 <Obsidian date="Wednesday, June 25th at 3:33 PM" datestamp="2025-06-25">

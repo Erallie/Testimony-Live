@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Obsidian from '$lib/components/Obsidian.svelte';
-	import ObsidianInlineCode from '$lib/components/ObsidianInlineCode.svelte';
 	import ObsidianLink from '$lib/components/ObsidianLink.svelte';
 </script>
 
